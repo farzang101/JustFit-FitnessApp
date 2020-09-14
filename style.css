@@ -1,5 +1,5 @@
-h1 {
-	font-size: 70px;
+body {
+		color: white;
 }
 
 .column {
@@ -7,9 +7,35 @@ h1 {
   width: 50%;
 }
 
+.row {
+	background-image: url("GreenTexture.png");
+	background-repeat: repeat-xy;
+}
+
+.rowBurn {
+	background-image: url("GreenTextureBurn.png");
+	background-repeat: repeat-xy;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.rowBurn:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.placeTexture {
+	background-image: url("GreenTexture.png");
+	background-repeat: repeat-x;
+}
+
+.placeTextureBurn {
+	background-image: url("GreenTextureBurn.png");
+	background-repeat: repeat-xy;
 }
