@@ -1,3 +1,38 @@
-h1 {
-	font-size: 70px;
+body {
+	color: white;
+	background-image: url(image/GreenTextureV2.png);
+}
+
+a:link {
+  color: red;
+  background-color: transparent;
+}
+
+
+.column {
+	float: left;
+	width: 50%;
+}
+
+.rowBurn {
+	background-image: url(image/GreenTextureBurnV2.png);
+	background-repeat: repeat-xy;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rowBurn:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.placeTextureBurn {
+	background-image: url(image/GreenTextureBurnV2.png);
+	background-repeat: repeat-xy;
 }
