@@ -1,38 +1,21 @@
 html{
   font-size: 10px;
   font-family: 'Montserrat', sens-self;
+  scroll-behavior: smooth;
 }
-body {
-  margin-left: auto;
-  margin-right: auto;
-	background-image: url(Fitness.jpg);
-}
-
-h1 {
-text-align: right;
-font-size: small;
-position: fixed;
-right: 100px;
-left: 100px;
-
-}
-h3{
-  text-align: center;
-  margin-top: 1%;
-  top: 50%;
-  font-size: 15x;
-  position: inherit;
-
-}
-img{
+head{
   height: 100px;
   position: fixed;
   top: 10px;
   left: 10px;
   filter: blur(20000);
   filter: invert(70%);
-
 }
+body {
+  background-image: url(Fitness.jpg);
+  background-size: auto;
+}
+
 .style a {
   float: left;
   color: #c5c4c4;
@@ -53,15 +36,75 @@ img{
   font-size: 16px;
 }
 
-pre{
+.paragraph pre{
+  float: left;
+  color: #c5c4c4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   font-size: 17px;
-  font-style: bold ,italic;
-  color: azure;
-  margin: 35px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  right: 100%;
-  left: 0%;
-  top: 40%;
+  margin-top: 30%;
+}
+
+.paragraph{
+  float: center;
+}
+
+.LiveWO a{
+  color: #7a1212;
+  text-align: 40px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  position: absolute;
+
+}
+.LiveWO{
+ background-size: 100%;
+}
+img.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   width: 100px;
+   height: 100px;
+   float: left;
+}
+.logo{
+  text-indent: -9999px;
+  background-image: url(HealthFitness-Logo.jpg);
+  width: 90px;
+  height: 80px;
+  background-size: 120px;
+  border-radius: 40%;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+.container { 
+  height: 100px;
+  width: 100px;
+  position: relative;
+
+}
+.center {
+  margin: 0;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 700px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.center button{
+  background-color: lightcoral;
+  height: 100px;
+  width: 150px;
+}
+button a{
+  font-size: larger;
+}
+.secondcenter button{
+  margin-left: 150px;
+  margin-top: -2000px;
+
 }
