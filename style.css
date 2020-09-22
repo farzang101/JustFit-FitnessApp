@@ -1,38 +1,48 @@
+html{
+    height: 1080px;
+    max-width: 100%;
+  font-size: 10px;
+  font-family: 'Montserrat', sens-self;
+}
 body {
-	color: white;
-	background-image: url(image/GreenTextureV2.png);
+    max-width: 100%;
+    height: 1000px;
+    background-image: url('bghome.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-a:link {
-  color: red;
-  background-color: transparent;
+
+h3{
+    max-width: 40%;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    font-size: 25x;
+  
+
 }
 
 
-.column {
-	float: left;
-	width: 50%;
-}
 
-.rowBurn {
-	background-image: url(image/GreenTextureBurnV2.png);
-	background-repeat: repeat-xy;
+.style a {
+  float: left;
+  color: #c5c4c4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.style {
+  float: right;
 }
-
-.rowBurn:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.placeTextureBurn {
-	background-image: url(image/GreenTextureBurnV2.png);
-	background-repeat: repeat-xy;
+.style input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-left: 100;
+  font-size: 16px;
 }
