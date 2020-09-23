@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<script src=p5.js></script>
+	</head>
+	<body>
+        <!-- Header Begin -->
+        <center>
+            <div class="rowBurn">
+                <div class="column">
+                    <br>
+                        <h3>
+                            Live Workout Events
+                        </h3>
+                    </br>
+                </div>
+                <div class="column">
+                    <br>
+                        <h3>
+                            <a href="Home.html">Home</a>
+                            <a href="About.html">About</a>
+                            <a href="Contact.html">Contact</a>
+                        </h3>
+                    </br>
+                </div>
+            </div>
+        </center>
+        <!-- Header End -->
+
+        <!-- Button to Bring up Database Data -->
+        <div class = "container" > 
+            <h3><u>AJAX jQuery Example with PHP MySQL</u></h3>
+            <p><strong>Click on button to display dogs' records from database</strong></p> 
+            
+            <div id="records"></div> 
+            
+            <p>
+                <input type="button" id = "getusers" value = "Fetch Records" />
+            </p>
+        </div> 
+        <!-- Button to Bring up Database Data End -->
+
+        <!-- Database Get Data Script -->
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+   
+        <script type="text/javascript"> 
+            $(function(){ 
+              $("#getusers").on('click', function(){ 
+              $.ajax({ 
+                method: "GET", 
+                
+                url: "LoginDBCon.php",
+              }).done(function( data ) { 
+                
+                var stringified = JSON.stringify(data);
+                var parsedObj = JSON.parse(stringified);
+ 
+                console.log(parsedObj);
+
+                var string='<table width="100%"><tr> <th>#</th> <th>Name</th> <th>Gender</th> <th>Species</th><tr>';
+         
+               /* from result create a string of data and append to the div */
+              
+                $.each( parsedObj, function( key, value ) { 
+                  
+                  string += "<tr> <td>"+value['ID'] + "</td><td>"+value['Name']+' '+value['Gender']+'</td>  \
+                            <td>'+value['Species']+"</td> </tr>"; 
+                      }); 
+                     string += '</table>'; 
+                  $("#records").html(string); 
+               }); 
+            }); 
+        }); 
+        </script> 
+        <!-- Database Get Data Script End -->
+
+
+        <!-- Footer Begin -->
+		<center>
+			<div class="rowBurn">
+				<br>
+					<h4>
+						Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
+					</h4>
+				</br>
+			</div>
+		</center>
+		<!-- Footer End -->
+	</body>
+</html>
