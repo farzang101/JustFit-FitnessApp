@@ -30,28 +30,22 @@ html{
         text-align: end;
         font-family: monospace;
         float: right;
-        margin-top: 5%;
+        font-size: 12px;
+        font-style: normal;
     }
     hr{
         color: rgb(11, 8, 15);
         margin-top: 40%;
-        margin-bottom: 0%;
     }
-.row {
-    text-align: center;
-    font-size: small;
-    margin-top: 2%;
-    margin-right: 10%;
-    margin: 10%;
-}
+
 .column {
     text-align: center;
-    font-size: small;
-    margin-top: 0%;
+    font-size: 20px;
+    margin-top: 20%;
     margin-right: 10%;
     
 }
 p{
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
 }
