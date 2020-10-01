@@ -1,38 +1,110 @@
+html{
+  font-size: 10px;
+  font-family: 'Montserrat', sens-self;
+  scroll-behavior: smooth;
+}
+head{
+  height: 100px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  filter: blur(20000);
+  filter: invert(70%);
+}
 body {
-	color: white;
-	background-image: url(image/GreenTextureV2.png);
+  background-image: url(Fitness.jpg);
+  background-size: auto;
 }
 
-a:link {
-  color: red;
-  background-color: transparent;
+.style a {
+  float: left;
+  color: #c5c4c4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.style {
+  float: right;
+}
+.style input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-left: 100;
+  font-size: 16px;
 }
 
-
-.column {
-	float: left;
-	width: 50%;
+.paragraph pre{
+  float: left;
+  color: #c5c4c4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 30%;
 }
 
-.rowBurn {
-	background-image: url(image/GreenTextureBurnV2.png);
-	background-repeat: repeat-xy;
+.paragraph{
+  float: center;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.LiveWO a{
+  color: #7a1212;
+  text-align: 40px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  position: absolute;
 
-.rowBurn:after {
-  content: "";
-  display: table;
-  clear: both;
 }
+.LiveWO{
+ background-size: 100%;
+}
+img.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   width: 100px;
+   height: 100px;
+   float: left;
+}
+.logo{
+  text-indent: -9999px;
+  background-image: url(HealthFitness-Logo.jpg);
+  width: 90px;
+  height: 80px;
+  background-size: 120px;
+  border-radius: 40%;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+.container { 
+  height: 100px;
+  width: 100px;
+  position: relative;
 
-.placeTextureBurn {
-	background-image: url(image/GreenTextureBurnV2.png);
-	background-repeat: repeat-xy;
+}
+.center {
+  margin: 0;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 700px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.center button{
+  background-color: lightcoral;
+  height: 100px;
+  width: 150px;
+}
+button a{
+  font-size: larger;
+}
+.secondcenter button{
+  margin-left: 150px;
+  margin-top: -2000px;
+
 }
