@@ -67,11 +67,11 @@
    			            success:function(response){
    			                var msg = "";
    			                if(response == 1){
-   			                    window.location = "UserPortal.html";
-   			                }else{
-   			                    msg = "Invalid username and password!";
-   			                }
-   			                $("#message").html(msg);
+                       			window.location.assign("UserPortal.php");
+                    		}else{
+                        	msg = "Invalid username and password!";
+                    		}
+                    		$("#message").html(msg);
    			            }
    			        });
    			    }
