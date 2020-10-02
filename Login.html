@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="">
 	<head>
@@ -31,52 +30,55 @@
         </center>
         <!-- Header End -->
 
-        <!-- Button to Bring up Database Data -->
-        <div class = "container" > 
-            <h3><u>AJAX jQuery Example with PHP MySQL</u></h3>
-            <p><strong>Click on button to display dogs' records from database</strong></p> 
-            
-            <div id="records"></div> 
-            
-            <p>
-                <input type="button" id = "getusers" value = "Fetch Records" />
-            </p>
-        </div> 
-        <!-- Button to Bring up Database Data End -->
+        <!-- Login Form Begin -->
+        <div class="container">
 
-        <!-- Database Get Data Script -->
+			<div id="div_login">
+				<h1>Login</h1>
+				<div id="message"></div>
+				<div>
+					<input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
+				</div>
+				<div>
+					<input type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
+				</div>
+				<div>
+					<input type="button" value="Submit" name="but_submit" id="but_submit" />
+				</div>
+			</div>
+		
+		</div>
+        <!-- Login Form End -->
+
+        <!-- Database Login Check Script -->
         <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
    
         <script type="text/javascript"> 
-            $(function(){ 
-              $("#getusers").on('click', function(){ 
-              $.ajax({ 
-                method: "GET", 
-                
-                url: "LoginDBCon.php",
-              }).done(function( data ) { 
-                
-                var stringified = JSON.stringify(data);
-                var parsedObj = JSON.parse(stringified);
- 
-                console.log(parsedObj);
-
-                var string='<table width="100%"><tr> <th>#</th> <th>Name</th> <th>Gender</th> <th>Species</th><tr>';
-         
-               /* from result create a string of data and append to the div */
-              
-                $.each( parsedObj, function( key, value ) { 
-                  
-                  string += "<tr> <td>"+value['ID'] + "</td><td>"+value['Name']+' '+value['Gender']+'</td>  \
-                            <td>'+value['Species']+"</td> </tr>"; 
-                      }); 
-                     string += '</table>'; 
-                  $("#records").html(string); 
-               }); 
-            }); 
-        }); 
+            $(document).ready(function(){
+   			$("#but_submit").click(function(){
+   			    var username = $("#txt_uname").val().trim();
+   			    var password = $("#txt_pwd").val().trim();
+			
+   			    if( username != "" && password != "" ){
+   			        $.ajax({
+   			            url:'checkUser.php',
+   			            type:'post',
+   			            data:{username:username,password:password},
+   			            success:function(response){
+   			                var msg = "";
+   			                if(response == 1){
+   			                    window.location = "UserPortal.html";
+   			                }else{
+   			                    msg = "Invalid username and password!";
+   			                }
+   			                $("#message").html(msg);
+   			            }
+   			        });
+   			    }
+   			});
+		});			
         </script> 
-        <!-- Database Get Data Script End -->
+        <!-- Database Login Check Script End -->
 
 
         <!-- Footer Begin -->
@@ -92,90 +94,3 @@
 		<!-- Footer End -->
 	</body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css">
-		<script src=p5.js></script>
-	</head>
-	<body>
-		<!-- Header Begin -->
-		<center>
-			<div class="rowBurn">
-				<div class="column">
-					<br>
-						<h3>
-							Live Workout Events
-						</h3>
-					</br>
-				</div>
-				<div class="column">
-					<br>
-						<h3>
-							<a href="Home.html">Home</a>
-							<a href="Exercise.html">Exercise</a>
-							<a href="Nutrition.html">Nutrition</a>
-							<a href="About.html">About</a>
-							<a href="Contact.html">Contact</a>
-						</h3>
-					</br>
-				</div>
-			</div>
-		</center>
-		<!-- Header End -->
-		
-		<center>
-			<div class="row">
-				<div class="column">
-					<p>
-						Uh, we can't actually take your username or password yet. Sorry...
-						<a href="UserPortal.html">User Portal</a>
-					</p>
-				</div>
-				<div class="column">
-					<br>
-						<h3>
-							Please enter your username and password. THE PASSWORD IS NOT HASHED, DO NOT USE A REAL PASSWORD
-						</h3>
-						<br>
-							<label for="Username">Username:</label>
-							<input type="text" id="Username" name="Username" value="">
-						</br>
-						<br>
-							<label for="Password">Password:</label>
-							<input type="text" id="Password" name="Password" value="">
-						</br>
-						<br>
-							<input type="submit" value="Submit">
-						</br>
-					</br>
-				</div>
-			</div> 
-		</center>
-
-		
-		<!-- Footer Begin -->
-		<center>
-			<div class="rowBurn">
-				<br>
-					<div class="column">
-						<h3>
-							Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-						</h3>
-					</div>
-					<div class="column">
-						<h3>
-							<a href="About.html">About</a>
-							<a href="Contact.html">Contact</a>
-						</h3>
-					</div>
-				</br>
-			</div>
-		</center>
-		<!-- Footer End -->
-	</body>
-</html>
->>>>>>> fa6f06cfb89804a1906eb72a128aa8d32a4bb6dd
