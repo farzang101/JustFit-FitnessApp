@@ -17,7 +17,3 @@ ErrorDocument 403 https://infinityfree.net/errors/403/
 ErrorDocument 404 https://infinityfree.net/errors/404/
 ErrorDocument 500 https://infinityfree.net/errors/500/
 ErrorDocument 503 https://infinityfree.net/errors/503/
-
-<Files />
-    AddType application/x-httpd-php .html
-</Files>
