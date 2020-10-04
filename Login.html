@@ -3,71 +3,93 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="Login.css">
 		<script src=p5.js></script>
+        <div class= "style1">
+			<a href="About.html">About</a>
+			<a href="Contact.html">Contact</a>
+			<br>
+	</div>
+        <br>
 	</head>
 	<body>
-		<!-- Header Begin -->
-		<center>
-			<div class="rowBurn">
-				<div class="column">
-					<br>
-						<h3>
-							Live Workout Events
-						</h3>
-					</br>
+        <!-- Header End -->
+        <br>
+        <!-- Login Form Begin -->
+        
+        <div class="container">
+            <h1>Login</h1>
+			<div id="div_login">
+				<div id="message"></div>
+				<div class="uname">
+					<input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
 				</div>
-				<div class="column">
-					<br>
-						<h3>
-							<a href="Home.html">Home</a>
-							<a href="Exercise.html">Exercise</a>
-							<a href="Nutrition.html">Nutrition</a>
-							<a href="About.html">About</a>
-							<a href="Contact.html">Contact</a>
-						</h3>
-					</br>
+				<div class="pass">
+					<input type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
+				</div>
+				<div class="sub">
+					<input type="button" value="Submit" name="but_submit" id="but_submit" />
 				</div>
 			</div>
-		</center>
-		<!-- Header End -->
 		
-		<center>
-			<div class="row">
-				<div class="column">
-					<p>
-						Uh, we can't actually take your username or password yet. Sorry...
-					</p>
-				</div>
-				<div class="column">
-					<br>
-						<h3>
-							Please enter your username and password (once we've added that functionality).
-						</h3>
-					</br>
-				</div>
-			</div> 
-		</center>
+		</div>
+        <!-- Login Form End -->
+<br>
+        <!-- Database Login Check Script -->
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+   
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+   			$("#but_submit").click(function(){
+   			    var username = $("#txt_uname").val().trim();
+   			    var password = $("#txt_pwd").val().trim();
+			
+   			    if( username != "" && password != "" ){
+   			        $.ajax({
+   			            url:'checkUser.php',
+   			            type:'post',
+   			            data:{username:username,password:password},
+   			            success:function(response){
+   			                var msg = "";
+   			                if(response == 1){
+                       			window.location.assign("UserPortal.php");
+                    		}else{
+                        	msg = "Invalid username and password!";
+                    		}
+                    		$("#message").html(msg);
+   			            }
+   			        });
+   			    }
+   			});
+		});			
+        </script> 
+        <!-- Database Login Check Script End -->
 
-		
-		<!-- Footer Begin -->
+		<br>
+        <!-- Footer Begin -->
 		<center>
+			
+			
 			<div class="rowBurn">
 				<br>
-					<div class="column">
-						<h3>
-							Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-						</h3>
-					</div>
-					<div class="column">
-						<h3>
-							<a href="About.html">About</a>
-							<a href="Contact.html">Contact</a>
-						</h3>
-					</div>
-				</br>
+					<h4>
+                        <hr class="hr">
+						Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
+					</h4>
 			</div>
 		</center>
 		<!-- Footer End -->
 	</body>
 </html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
