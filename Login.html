@@ -51,25 +51,27 @@
         <!-- Login Form End -->
 
         <!-- Database Login Check Script -->
-        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
    
         <script type="text/javascript"> 
             $(document).ready(function(){
    			$("#but_submit").click(function(){
    			    var username = $("#txt_uname").val().trim();
    			    var password = $("#txt_pwd").val().trim();
-			
-   			    if( username != "" && password != "" ){
+				var ciphertext = CryptoJS.AES.encrypt(password, "No son dont that gun is loaded");
+
+   			    if( username != "" && (ciphertext.toString()) != "" ){
    			        $.ajax({
    			            url:'checkUser.php',
    			            type:'post',
-   			            data:{username:username,password:password},
+   			            data:{username:username,password:(ciphertext.toString())},
    			            success:function(response){
-   			                var msg = "";
+   			                var msg = response;
    			                if(response == 1){
                        			window.location.assign("UserPortal.php");
                     		}else{
-                        	msg = "Invalid username and password!";
+                        	//msg = "Invalid username and password!";
                     		}
                     		$("#message").html(msg);
    			            }
