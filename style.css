@@ -1,7 +1,7 @@
 html{
   font-size: 10px;
   font-family: 'Montserrat', sens-self;
-    max-height: inherit;
+  max-height: 100px;
     
 }
 head{
@@ -45,14 +45,14 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-    margin: 250px 20px;
-    margin-left: 30px;
-    
+  font-size: 17px;    
 }
 
 .paragraph{
   float: center;
+     margin: 150px;
+    margin-left: -10%;
+    
 }
 
 .LiveWO a{
@@ -84,6 +84,42 @@ img.image {
   border-radius: 40%;
   opacity: 0.5;
   filter: grayscale(100%);
+    
+}
+
+.featuredBtn.active {
+  background-color: #bf9471;
+  color: white;
+}
+.featuredBtn.active2 {
+  background-color: #0f237c;
+  color: white;
+
+}
+.featuredBtn.active3 {
+  background-color: #1a7a16;
+  color: white;
+}
+.featuredBtn.active4 {
+  background-color: #621464;
+  color: white;
+}
+
+.bu input{
+  text-align: center;
+    width: 20%;
+    height: 20%;
+    padding: 10px 10px;
+    color: coral;
+    margin: 10px 5px;
+  font-size: medium;
+    border-radius: 20px;
+    margin-top: 32px;
+    background-color: aquamarine;
+}
+.bu{
+    margin-top: 20%;
+    margin-right: 20%;
 }
 .container2 a{
   float: left;
@@ -98,35 +134,6 @@ img.image {
  
 }
 
-   
-.featuredBtn.active {
-  background-color: #bf9471;
-  color: white;
-}
-.featuredBtn.active2 {
-  background-color: #0f237c;
-  color: white;
-}
-.featuredBtn.active3 {
-  background-color: #1a7a16;
-  color: white;
-}
-.featuredBtn.active4 {
-  background-color: #621464;
-  color: white;
-}
-.bu input{
-  text-align: center;
-    width: 20%;
-    height: 20%;
-    padding: 12px 10px;
-    color: coral;
-    margin: 8px 20px;
-  font-size: medium;
-    border-radius: 20px;
-    margin-top: 10px;
-    background-color: aquamarine;
-}
 .footer{
 text-align: center;
 background-color: blueviolet;
@@ -137,7 +144,6 @@ padding: 20px;
 hr.new1 {
   border: 1px solid rgb(22, 4, 4);
   border-radius: 3px;
-  
 }
 h1{
     font-size: 16px;
