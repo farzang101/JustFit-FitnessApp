@@ -1,48 +1,171 @@
-html{
-    height: 1080px;
+html,body 
+{
+    height: 100%;
     max-width: 100%;
-  font-size: 10px;
-  font-family: 'Montserrat', sens-self;
 }
-body {
-    max-width: 100%;
-    height: 1000px;
-    background-image: url('bghome.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 900px;;
+    background: url(bghome.jpg);
     background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
 }
 
+header 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-h3{
-    max-width: 40%;
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50%;
-    font-size: 25x;
+header .logo
+{
   
-
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
 }
 
-
-
-.style a {
-  float: left;
-  color: #c5c4c4;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+header .navigation
+{
+    
+    position: relative;
+    display: flex;
 }
-.style {
-  float: right;
+header .navigation li
+{
+    list-style: none;
 }
-.style input[type=text] {
-  float: right;
-  padding: 6px;
+header .navigation li a
+{
+    padding-right: 18px;
+    border-right: 8px solid black;
+    font-size: 1.2em;
+    display: inline-block;
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    
+}
+header .navigation li input
+ 
+  background-color: black;
   border: none;
-  margin-top: 8px;
-  margin-left: 100;
-  font-size: 16px;
+  font-size: 20px;
 }
+header .navigation li a:hover
+{
+    color: #o3a9f4;
+}
+
+.content
+{
+    
+    padding-right: 1px;
+    width: 40%;
+  
+}
+.content .contentBx h2
+{
+    font-family: serif;
+    font-size: 5em;
+
+    line-height: 1em;
+    
+}
+.content .contentBx p
+{
+    float: inherit;
+    font-size: 1.4em;   
+    color: white; 
+    font-weight: 400;
+    
+}
+.content .contentBx a
+{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #03a9f4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.user-choices input{
+    max-width: 40%;
+    height: 400px;
+    padding: 20px 300px;
+    color: coral;
+    margin-top: 15px;
+    margin-left: 90px;
+    margin-right:90px;;
+    
+}
+ .input1 input {
+    max-width: 41%;
+    height: 400px;
+    color: coral;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+ .input2 input {
+    max-width: 41%;
+    height: 400px;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: coral;
+  
+}
+
+.user-choices
+{
+    height: 6980px;
+}
+
+.featuredBtn.active {
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+}
+.featuredBtn.active2 {
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+
+}
+.featuredBtn.active3 {
+  background-color: black;
+  color: white;
+  font-size: 2em;
+}
+.featuredBtn.active4 {
+  background-color: black;
+  color: white;
+ font-size: 2em;
+}
+
