@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 head{
     height: 100px;
@@ -40,4 +41,48 @@ head{
         color: rgb(11, 8, 15);
         margin-top: 40%;
     
+=======
+
+head{
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    filter: blur(20000);
+    filter: invert(70%);
+  }
+
+  body{
+      background-color: rgb(149, 33, 196);
+  }
+.style1 a {
+  float: left;
+  color: #c5c4c4;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+   
+}
+.style1 {
+  float: right;
+} 
+
+.column {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-right: 10%;
+    font-family: cursive;
+    color: cornsilk;
+    
+}
+.rowBurn{
+    color: blanchedalmond
+}
+  hr{
+        color: rgb(11, 8, 15);
+        margin-top: 40%;
+    
+>>>>>>> 823644e755344fb4d30db76a184a076a6c00fad2
 }
