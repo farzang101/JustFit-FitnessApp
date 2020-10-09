@@ -1,3 +1,12 @@
+<?php
+	include "config.php";
+
+	// Check user login or not
+	if(isset($_SESSION['uname'])){
+		header('Location: UserPortal.php');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="">
 	<head>
@@ -33,14 +42,17 @@
         <!-- Login Form Begin -->
         <div class="container">
 
-			<div id="div_login">
-				<h1>Login</h1>
+			<div id="div_signup">
+				<h1>Sign-Up</h1>
 				<div id="message"></div>
 				<div>
 					<input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
 				</div>
 				<div>
 					<input type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
+                </div>
+                <div>
+					<input type="password" class="textbox" id="txt_pwdre" name="txt_pwd" placeholder="Re-Type Password"/>
 				</div>
 				<div>
 					<input type="button" value="Submit" name="but_submit" id="but_submit" />
@@ -61,20 +73,24 @@
    			$("#but_submit").click(function(){
    			    var username = $("#txt_uname").val().trim();
 				var password = $("#txt_pwd").val().trim();
+                var passCheck = $("#txt_pwdre").val().trim();
 				   
 				var ciphertext = CryptoJS.SHA3(password, { outputLength: 224 });
+                var ciphertextCheck = CryptoJS.SHA3(passCheck, { outputLength: 224 });
 
-   			    if( username != "" && (ciphertext.toString()) != "" ){
+   			    if( username != "" && (ciphertext.toString()) != "" && (ciphertext.toString() == ciphertextCheck.toString())){
    			        $.ajax({
-   			            url:'checkUser.php',
+   			            url:'addUser.php',
    			            type:'post',
    			            data:{username:username,password:(ciphertext.toString())},
    			            success:function(response){
-   			                var msg = "";
+   			                var msg = response;
    			                if(response == 1){
                        			window.location.assign("UserPortal.php");
-                    		}else{
-                        	msg = "Invalid username and password!";
+                    		}else if (response == 2) {
+                                msg = "Username already in use!";
+                            } else {
+                        	    //msg = "Invalid password!";
                     		}
                     		$("#message").html(msg);
    			            }

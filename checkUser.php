@@ -8,24 +8,26 @@ error_reporting(E_ALL);
 $uname = mysqli_real_escape_string($con,$_POST['username']);
 $upassword = mysqli_real_escape_string($con,$_POST['password']);
 
-$hash = password_hash($upassword, PASSWORD_DEFAULT);
+//$fakehash = password_hash($upassword, PASSWORD_DEFAULT);
 
-if(!(password_verify($upassword, $hash))) {
-    echo 'Invalid password';
-}
-
-if ($uname != "" && $hash != "")
+if ($uname != "" && $upassword != "")
 {
-    $sql_query = ("SELECT COUNT(*) as cntUser from Users where Username='".$uname."' and Password='".$hash."'");
+    $sql_query = ("SELECT Password, COUNT(*) as cntUser from Users where Username='".$uname."'");
 
     $result = mysqli_query($con,$sql_query);
     $row = mysqli_fetch_array($result);
 
     $count = $row['cntUser'];
+    $hash = $row['Password'];
 
     if($count > 0){
+        if(password_verify($upassword, $hash))
+        {
         $_SESSION['uname'] = $uname;
-        echo $hash;
+        echo 1;
+        } else {
+            echo 0;
+        }
     }else{
         echo 0;
     }
