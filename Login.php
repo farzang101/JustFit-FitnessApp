@@ -1,3 +1,12 @@
+<?php
+	include "config.php";
+
+	// Check user login or not
+	if(isset($_SESSION['uname'])){
+		header('Location: UserPortal.php');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="">
 	<head>

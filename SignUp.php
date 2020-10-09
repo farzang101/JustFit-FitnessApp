@@ -84,13 +84,13 @@
    			            type:'post',
    			            data:{username:username,password:(ciphertext.toString())},
    			            success:function(response){
-   			                var msg = response;
+   			                var msg = "";
    			                if(response == 1){
                        			window.location.assign("UserPortal.php");
                     		}else if (response == 2) {
                                 msg = "Username already in use!";
                             } else {
-                        	    //msg = "Invalid password!";
+                        	    msg = "Invalid password!";
                     		}
                     		$("#message").html(msg);
    			            }

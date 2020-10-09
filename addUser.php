@@ -31,7 +31,7 @@ if ($uname != "" && $upassword != "")
                 echo 1;
             }
         } else {
-            echo $uhash;
+            echo 0;
         }
     }
 }
