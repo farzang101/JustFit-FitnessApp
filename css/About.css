@@ -1,0 +1,101 @@
+
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sens-self;
+  }
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightcoral;
+  }
+  .ABstyle a {
+    float: left;
+    color: #220707;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .ABstyle {
+    float: right;
+  }
+  h3 {
+    text-align: right;
+    font-size: small;
+    position: fixed;
+    right: 100px;
+    left: 100px;
+    
+    }
+ .rowBurn{
+    color: blanchedalmond;
+     font-size: 18px;
+}
+  hr{
+        color: rgb(11, 8, 15);
+        margin-top: 40%;
+    
+}
+
+.column {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20%;
+    margin-right: 10%;
+    
+}
+p{
+    font-size: 20px;
+    font-style: normal;
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sens-self;
+  }
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightcoral;
+  }
+  .ABstyle a {
+    float: left;
+    color: #220707;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .ABstyle {
+    float: right;
+  }
+  h3 {
+    text-align: right;
+    font-size: small;
+    position: fixed;
+    right: 100px;
+    left: 100px;
+    
+    }
+    h4{
+        text-align: end;
+        font-family: monospace;
+        float: right;
+        font-size: 12px;
+        font-style: normal;
+    }
+    hr{
+        color: rgb(11, 8, 15);
+        margin-top: 40%;
+    }
+
+.column {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20%;
+    margin-right: 10%;
+    
+}
+p{
+    font-size: 20px;
+    font-style: normal;
+}

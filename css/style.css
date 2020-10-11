@@ -1,0 +1,152 @@
+html{
+  font-size: 10px;
+  font-family: 'Montserrat', sens-self;
+  max-height: 100px;
+    
+}
+head{
+  height: 100px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  filter: blur(20000);
+  filter: invert(70%);
+}
+body {
+  background-image: url(../image/Fitness.jpg);
+  background-size: fixed;
+  background-repeat: no-repeat;
+    
+}
+
+.style a {
+  float: left;
+  color: #c5c4c4;
+  padding: 14px 13px;
+  text-decoration: none;
+  font-size: 17px;
+    
+}
+.style {
+  float: right;
+    margin-left: 40%;
+}
+.style input[type=text] {
+  float: right;
+  padding: 3px;
+  border: none;
+  margin-top: 8px;
+  margin-left: 10;
+  font-size: 14px;
+}
+.paragraph pre{
+  float: left;
+  color: #c5c4c4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;    
+}
+
+.paragraph{
+  float: center;
+     margin: 150px;
+    margin-left: -10%;
+    
+}
+
+.LiveWO a{
+  color: #7a1212;
+  text-align: 40px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+ 
+
+}
+.LiveWO{
+ background-size: 100%;
+}
+img.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   width: 100px;
+   height: 100px;
+   float: left;
+}
+.logo{
+  text-indent: -9999px;
+  background-image: url(../image/HealthFitness-Logo.jpg);
+  width: 90px;
+  height: 80px;
+  background-size: 120px;
+  border-radius: 40%;
+  opacity: 0.5;
+  filter: grayscale(100%);
+    
+}
+
+.featuredBtn.active {
+  background-color: #bf9471;
+  color: white;
+}
+.featuredBtn.active2 {
+  background-color: #0f237c;
+  color: white;
+
+}
+.featuredBtn.active3 {
+  background-color: #1a7a16;
+  color: white;
+}
+.featuredBtn.active4 {
+  background-color: #621464;
+  color: white;
+}
+
+.bu input{
+  text-align: center;
+    width: 20%;
+    height: 20%;
+    padding: 10px 10px;
+    color: coral;
+    margin: 10px 5px;
+  font-size: medium;
+    border-radius: 20px;
+    margin-top: 32px;
+    background-color: aquamarine;
+}
+.bu{
+    margin-top: 20%;
+    margin-right: 20%;
+}
+.container2 a{
+  float: left;
+  color: #3a1fcf;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.container2{
+  float: right;
+ 
+}
+
+.footer{
+text-align: center;
+background-color: blueviolet;
+color: cornflowerblue;
+padding: 20px;
+
+}
+hr.new1 {
+  border: 1px solid rgb(22, 4, 4);
+  border-radius: 3px;
+}
+h1{
+    font-size: 16px;
+    color: azure;
+    text-align: center
+}
