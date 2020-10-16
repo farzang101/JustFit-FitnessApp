@@ -1,81 +1,46 @@
 <!DOCTYPE html>
-
-<html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Fitness Gods | Landing page </title>
-    <link rel="stylesheet" href="../css/Home.css">
-</head>
-
-<body>
-    <section>
-        <header>
-            <container> 
-                <a href="#" class = "logo">Just Fit</a>
-            </container>
-            
-            <u1 class = "navigation">
-                <li><a href="html/Home.html">Home</a></li>
-                <li><a href="html/About.html">About</a></li>
-                <li><a href="html/Contact.html">Contact</a></li> 
-                <li><a href="../php/Login.php">Login</a></li>
-                <li><a href="../php/UserPortal.php">UserPortal</a></li>
-                
-                
-                
-                
-                <li><input type="text" name="search" placeholder="Search..."></li>
-                    
-            </u1>
-        </header>
-        
-        
-        <div class="content">
-            <div class="contentBx">
-                <h2> Tough Times
-                 <br>
-                    Stronger Minds</h2>
-                <br>
-                <p>The hardest part is the first step. The pandemic has brought that first step to most individual's home. No excuses! Allow us to show you ways to stay fit, lose weight, or even build muscle with little equipment required.</p>     
-                <br>
-                <br>
-                <a href="html/DailyPlan.html">Get Started</a>
-                </div> 
-            </div> 
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/style.css">
+		<script src=p5.js></script>
+		<div class= "style">
+			<a href="Home.html">Home</a>
+			<a href="About.html">About</a>
+			<a href="Contact.html">Contact</a>
+			<input type="text"  name="search" placeholder="Search.."><br>
+	</div>
+		<h1 class="logo">Logo here</h1>
+	</head>	
+	<body>
+		<div class= "paragraph" >
+			<pre>
+				“The last three or four reps is what makes the muscle grow.
+				
+				This area of pain divides a champion from someone who is not a champion.”
+	
+				— Arnold Schwarzenegger, seven-time Mr. Olympia
+				</pre>
+		</div>
         <br>
-        
-    
-    </section>
-    
-    <! this is foor green room shit >
-    <! Whatever that we interpret as the data is the correct way we should organize the data>
-    
-    <section2>
-    <div class="user-choices">
-            <div class ="input1">
-                <input type="button1" class="featuredBtn active" onclick="window.location.href='html/DailyPlan.html';" 
-                value="Daily Plan" />
-        
-
-                
-                 <input type="button2"
-                        class="featuredBtn active2" onclick="window.location.href='html/ExerciseHeader.html';" value="Exercise Header" />
-            </div>
-    <br>
-        
-            <div class = "input2">
-                <input type="button3" class="featuredBtn active3" onclick="window.location.href='html/Nutrition.html';" value=" Nutrition" />
-                <input type="button4" 
-                       class="featuredBtn active4"
-                       onclick="window.location.href='html/Exercise.html';" 
-                       value=" Exercise" />
-            </div>   
-    </div>
-    
-    </section2>
-    </body>
-
+		<form class="Button">
+            <div class="bu">
+					<input  class="button1" type=button onClick="parent.location='../php/DailyPlan.php'" value='Daily Plan'readonly>
+					<input class="button2" type=button onClick="parent.location='Nutrition.html'" value='Nutrition'readonly>
+                <br>
+					<input class="button3" type=button onClick="parent.location='Exercise.html'" value='Exercise'readonly>
+                    <input class="button4" type=button onClick="parent.location='ExtraWorkout.html'" value=' More Workout'readonly>
+                </div>
+		</form>
+		<br>
+		<hr class="new1">
+		<footer>
+				<div class="container2">
+					<a href="Terms & Conditions.html">Terms And Conditions</a>
+					<a href="CUSTOME SERVICE.html">Customer Service</a>
+				</div>
+		</footer>
+	</body>
 
 </html>
