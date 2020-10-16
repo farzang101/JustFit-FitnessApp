@@ -3,7 +3,7 @@
 
 	// Check user login or not
 	if(!isset($_SESSION['uname'])){
-		header('Location: ../html/Login.html');
+		header('Location: ../php/Login.php');
 	}
 
 	// logout
