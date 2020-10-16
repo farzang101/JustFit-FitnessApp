@@ -1,0 +1,36 @@
+
+html{
+  font-family: 'Montserrat', sens-self;
+
+}
+
+body {
+  background-color: #7FFFD4;
+  background-size: fixed;
+  background-repeat: no-repeat;
+    
+}
+
+.style3 a {
+  float: left;
+  color: #c5c4c4;
+  padding: 14px 13px;
+  text-decoration: none;
+  font-size: 17px;
+    
+}
+.style3 {
+  float: right;
+}
+
+
+.Term{
+ margin-left: 20%;
+    margin-right: 20%;
+    
+}
+.column2 h3{
+    color:blue;
+    font-size: 12px;
+    text-align: center;
+}
