@@ -1,5 +1,5 @@
 <?php
-	include "config.php";
+	include "../php/config.php";
 
 	// Check user login or not
 	if(!isset($_SESSION['uname'])){
@@ -65,7 +65,7 @@
 				<div class="column">
 					<br>
 						<h2>
-							<a href="FavoriteExercises.html">Click here to view your favorite exercises</a>
+							<a href="../html/FavoriteExercises.html">Click here to view your favorite exercises</a>
 						</h2>
 					</br>
 				</div>
@@ -87,7 +87,7 @@
 				<div class="column">
 					<br>
 						<h2>
-							<a href="7DayPlan.html">Click here to view your 7 day plan</a>
+							<a href="../html/7DayPlan.html">Click here to view your 7 day plan</a>
 						</h2>
 					</br>
 				</div>

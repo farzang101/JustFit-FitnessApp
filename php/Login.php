@@ -47,13 +47,13 @@
 			
    			    if( username != "" && password != "" ){
    			        $.ajax({
-   			            url:'checkUser.php',
+   			            url:'../php/checkUser.php',
    			            type:'post',
    			            data:{username:username,password:password},
    			            success:function(response){
    			                var msg = "";
    			                if(response == 1){
-                       			window.location.assign("UserPortal.php");
+                       			window.location.assign("../php/UserPortal.php");
                     		}else{
                         	msg = "Invalid username and password!";
                     		}

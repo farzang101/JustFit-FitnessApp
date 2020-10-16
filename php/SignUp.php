@@ -1,9 +1,9 @@
 <?php
-	include "config.php";
+	include "../php/config.php";
 
 	// Check user login or not
 	if(isset($_SESSION['uname'])){
-		header('Location: UserPortal.php');
+		header('Location: ../php/UserPortal.php');
 	}
 ?>
 
@@ -79,13 +79,13 @@
 
    			    if( username != "" && (ciphertext.toString()) != "" && (ciphertext.toString() == ciphertextCheck.toString())){
    			        $.ajax({
-   			            url:'addUser.php',
+   			            url:'../php/addUser.php',
    			            type:'post',
    			            data:{username:username,password:(ciphertext.toString())},
    			            success:function(response){
    			                var msg = "";
    			                if(response == 1){
-                       			window.location.assign("UserPortal.php");
+                       			window.location.assign("../php/UserPortal.php");
                     		}else if (response == 2) {
                                 msg = "Username already in use!";
                             } else {
