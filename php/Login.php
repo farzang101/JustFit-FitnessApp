@@ -1,4 +1,12 @@
-  
+<?php
+	include "../php/config.php";
+
+	// Check user login or not
+	if(isset($_SESSION['uname'])){
+		header('Location: ../php/UserPortal.php');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="">
 	<head>
@@ -37,19 +45,24 @@
         <!-- Login Form End -->
 <br>
         <!-- Database Login Check Script -->
-        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/x64-core.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/sha3.min.js"></script>
    
         <script type="text/javascript"> 
             $(document).ready(function(){
    			$("#but_submit").click(function(){
    			    var username = $("#txt_uname").val().trim();
-   			    var password = $("#txt_pwd").val().trim();
-			
-   			    if( username != "" && password != "" ){
+				var password = $("#txt_pwd").val().trim();
+				   
+				var ciphertext = CryptoJS.SHA3(password, { outputLength: 224 });
+
+   			    if( username != "" && (ciphertext.toString()) != "" ){
    			        $.ajax({
    			            url:'../php/checkUser.php',
    			            type:'post',
-   			            data:{username:username,password:password},
+   			            data:{username:username,password:(ciphertext.toString())},
    			            success:function(response){
    			                var msg = "";
    			                if(response == 1){
