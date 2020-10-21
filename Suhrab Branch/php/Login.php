@@ -15,8 +15,9 @@
 		<link rel="stylesheet" href="../css/Login.css"> 
 		<script src=p5.js></script>
         <div class= "style1">
-			<a href="../html/About.html">About</a>
-			<a href="../html/Contact.html">Contact</a>
+			<a href="../html/About1.html">About</a>
+			<a href="../html/Contact1.html">Contact</a>
+			<a href=" ../php/SignUp.php"> Login Please</a>
 			<br>
 	</div>
         <br>

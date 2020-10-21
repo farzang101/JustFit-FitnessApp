@@ -16,6 +16,7 @@
         <div class= "style1">
 			<a href="../html/About1.html">About</a>
 			<a href="../html/Contact1.html">Contact</a>
+			<a href=" ../php/Login.php"> Login Please</a>
 			<br>
 	</div>
         <br>
