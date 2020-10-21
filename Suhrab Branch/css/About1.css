@@ -9,7 +9,7 @@ html{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 17px;
 }
 .Astyle {
   float: right;
@@ -44,7 +44,10 @@ p{
   font-size: 20px;
   font-style: normal;
 }
-h4{
-    font-size: 12px;
-    text-align: center;
+.rowBurn{
+  color: rgb(45, 204, 24)
+}
+hr{
+      color: rgb(11, 8, 15);
+      margin-top: 30%;
 }
