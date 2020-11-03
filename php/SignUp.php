@@ -8,20 +8,14 @@
 ?>
 <!DOCTYPE html>
 <html lang="">
-<head>
+	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../css/style.css"> 
-		<script src=p5.js></script>
-        <div class= "style1">
-			<a href="../html/About1.html">About</a>
-			<a href="../html/Contact1.html">Contact</a>
-			<a href=" ../php/Login.php"> Login Please</a>
-			<br>
-	</div>
-        <br>
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
+		<?php include ('../html/Header.html'); ?>	
         <!-- Login Form Begin -->
         <div class="container">
 

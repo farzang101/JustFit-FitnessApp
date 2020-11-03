@@ -19,37 +19,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../css/style.css">
-		
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-		<!-- Header Begin -->
-		<center>
-			<div class="rowBurn">
-				<div class="column">
-					<br>
-						<h3>
-							Live Workout Events
-						</h3>
-					</br>
-				</div>
-				<div class="column">
-					<br>
-						<h3>
-							<a href="../html/Home.html">Home</a>
-							<a href="../html/Exercise.html">Exercise</a>
-							<a href="../html/Nutrition.html">Nutrition</a>
-							<a href="../html/About.html">About</a>
-							<a href="../html/Contact.html">Contact</a>
-							<form method='post' action="">
-								<input type="submit" value="Logout" name="but_logout">
-							</form>
-						</h3>
-					</br>
-				</div>
-			</div>
-		</center>
-		<!-- Header End -->
-
+		<?php include ('../html/Header.html'); ?>
 		<center>
 			<div class="placeTextureBurn">
 				<br>
@@ -65,7 +38,7 @@
 				<div class="column">
 					<br>
 						<h2>
-							<a href="../html/FavoriteExercises.html">Click here to view your favorite exercises</a>
+							<a href="../php/FavoriteExercises.php">Click here to view your favorite exercises</a>
 						</h2>
 					</br>
 				</div>
@@ -87,7 +60,7 @@
 				<div class="column">
 					<br>
 						<h2>
-							<a href="../html/7DayPlan.html">Click here to view your 7 day plan</a>
+							<a href="../php/7DayPlan.php">Click here to view your 7 day plan</a>
 						</h2>
 					</br>
 				</div>
@@ -109,7 +82,7 @@
 				<div class="column">
 					<br>
 						<h2>
-							<a href="../html/NutritionHelp.html">Click here to view your personalized nutrition plan</a>
+							<a href="../php/NutritionHelp.php">Click here to view your personalized nutrition plan</a>
 						</h2>
 					</br>
 				</div>
@@ -131,7 +104,7 @@
 				<div class="column">
 					<br>
 						<h2>
-							<a href="../html/Profile.html">Click here to view your profile</a>
+							<a href="../php/Profile.php">Click here to view your profile</a>
 						</h2>
 					</br>
 				</div>
@@ -149,8 +122,8 @@
 					</div>
 					<div class="column">
 						<h3>
-							<a href="../html/About.html">About</a>
-							<a href="../html/Contact.html">Contact</a>
+							<a href="../php/About.php">About</a>
+							<a href="../php/Contact.php">Contact</a>
 						</h3>
 					</div>
 				</br>
