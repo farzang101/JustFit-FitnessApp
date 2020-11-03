@@ -3,7 +3,7 @@
 
 	// Check user login or not
 	if(isset($_SESSION['uname'])){
-		header('Location: UserPortal.php');
+		header('Location: ../php/UserPortal.php');
 	}
 ?>
 
@@ -13,18 +13,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../css/Login.css"> 
-		<script src=p5.js></script>
-        <div class= "style1">
-			<a href="../html/About1.html">About</a>
-			<a href="../html/Contact1.html">Contact</a>
-			<a href=" ../php/SignUp.php"> Signup Please</a>
-			<br>
-	</div>
-        <br>
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
-
-        <!-- Header End -->
-
+	<body>
+		<?php include ('../html/Header.html'); ?>	
         <!-- Login Form Begin -->
         <div class="container">
             <h1>Login</h1>
@@ -39,6 +31,7 @@
 				<div class="sub">
 					<input type="button" value="Submit" name="but_submit" id="but_submit" />
 				</div>
+				<a href=" ../php/SignUp.php">Don't have an account?</a>
 			</div>
 		<br>
 		</div>
