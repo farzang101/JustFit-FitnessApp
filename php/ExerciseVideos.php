@@ -50,17 +50,6 @@
 			</div>
 		</div>			
 		
-		<!-- Footer Begin -->
-		<center>
-			<div class="row">
-				<br>
-					<center>
-						<h3>
-							Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-						</h3>
-					</center>
-			</div>
-		</center>
-		<!-- Footer End -->
+		<?php include ('../html/Footer.html'); ?>
 	</body>
 </html>

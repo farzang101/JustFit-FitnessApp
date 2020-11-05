@@ -164,5 +164,6 @@
         }
         </script> -->
 
-
+		<?php include ('../html/Footer.html'); ?>
     </body>
+</html>

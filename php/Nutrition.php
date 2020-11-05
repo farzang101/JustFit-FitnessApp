@@ -71,18 +71,6 @@
 		</center>
 
 		
-		<!-- Footer Begin -->
-		<center>
-			<br>
-				<div class="rowBurn">
-					<br>
-						<h4>
-							<hr>
-							Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-						</h4>
-					</br>
-				</div>
-			</center>
-			<!-- Footer End -->
+		<?php include ('../html/Footer.html'); ?>
 	</body>
 </html>
