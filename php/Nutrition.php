@@ -3,19 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../css/Nutrition.css">
+        <link rel="stylesheet" href="../css/Nutrition.css">
+        <link rel="stylesheet" href="../css/HeaderFooter.css">
 		<script src=p5.js></script>
-		<!-- Header Begin -->
-		<!--<div class= "style2">
-			<a href="../html/Home.html">Home</a>
-			<a href="Exercise.html">Exercise</a>
-			<a href="Contact.html">Contact</a>
-			<a href="../html/About.html">About</a>
-		</div>
-	<!-- Header End -->
+		
          <br>
 	</head>
 	<body>
+    <?php include ('../html/Header.html'); ?>	
         <div class="image">
             <h2 style="color: darkblue">Stawberry Banana Smoothie</h2>
         <img src="../image/Vanilla-Shake.jpg" alt="Vanilla-Shake">
@@ -137,7 +132,8 @@
 						</h4>
 				
 				</div>
-			</center>
+            </center>
+            <?php include ('../html/Footer.html'); ?>
 			<!-- Footer End -->
 	</body>
 </html>
