@@ -30,24 +30,6 @@
 			</div> 
 		</center>
 		
-		<!-- Footer Begin -->
-		<center>
-			<div class="rowBurn">
-				<br>
-					<div class="column">
-						<h3>
-							Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-						</h3>
-					</div>
-					<div class="column">
-						<h3>
-							<a href="../php/About.php">About</a>
-							<a href="../php/Contact.php">Contact</a>
-						</h3>
-					</div>
-				</br>
-			</div>
-		</center>
-		<!-- Footer End -->
+		<?php include ('../html/Footer.html'); ?>
 	</body>
 </html>
