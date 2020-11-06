@@ -3,29 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src=p5.js></script>
 		<link rel="stylesheet" href="../css/Exercise.css">
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-		<!-- Header Begin -->
-		<center>
-             <br>
-			<div class= "style">
-				<a href="../html/Home.html">Home</a>
-			<a href="../html/About.html">About</a>
-			<a href="../html/Contact.html">Contact</a>
-		  </div>
-            
-		  
-		</center>
-		<!-- Header End -->
-		<br>
-		<center>
-            <div class="login">
-			<a  href="../php/Login.php"> Login</a>
-		  </div>
-		</center>
-		
+		<?php include ('../html/Header.html'); ?>
+		<br>		
 		<div class="Exercise1">
 			<h2>
 				<br>
@@ -1089,41 +1072,12 @@
 				<div class="column1">
 					<br>
 						<h2>
-							<a href="../html/Exercise.html">Exercise Archive</a>
+							<a href="../php/Exercise.php">Exercise Archive</a>
 						</h2>
-						<p>
-							Our exercises are hand selected  and exercise engineers who.
-							Our exercises are hand selected by and exercise engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who.
-							Our exercises are hand selected by nutrition and  engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who
-							Our exercises are hand selected by nutrition and exercise engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who
-							Our exercises are hand  by nutrition and exercise engineers who
-							Our are hand by nutrition and exercise engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who.
-							Our exercises are hand by and exercise engineers who
-							Our exercises are hand selected by nutrition and exercise engineers who
-							Our exercises are hand selected by nutrition and exercise engineers who
-							Our are hand selected by nutrition and exercise engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who.
-						</p>
 				</div>
 			</div> 
 		</center>
         <hr>
-		<!-- Footer Begin -->
-		<center>
-			<div class="rowBurn">
-				<br>
-					<div class="column2">
-						<h3>
-							Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-						</h3>
-					</div>
-			</div>
-		</center>
-		<!-- Footer End -->
+		<?php include ('../html/Footer.html'); ?>
 	</body>
 </html>

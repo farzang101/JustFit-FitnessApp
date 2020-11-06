@@ -5,8 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/Nutrition.css">
         <link rel="stylesheet" href="../css/HeaderFooter.css">
-		<script src=p5.js></script>
-		
          <br>
 	</head>
 	<body>
@@ -101,39 +99,7 @@
             </iframe><hr>
              </div>
             </div>
-		<!-- Header End 
-		
-		<center>
-			<div class="placeTextureBurn">
-				<br>
-					<h3>
-						My Nutrition Help
-					</h3>
-			</div>
-			<div class="row">
-				<div class="column">
-					<img src="image/BiggerInfusion.png" alt "Exercise">
-				</div>
-				<div class="column">
-					<br>
-						<h2>
-							<a href="../php/Login.php">Log in to view your nutrition information</a>
-						</h2>
-					</br>
-				</div>
-			</div> 
-		</center>
---> <center>
-				<div class="rowBurn">
-					<br>
-						<h4>
-							<hr>
-							Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-						</h4>
-				
-				</div>
             </center>
             <?php include ('../html/Footer.html'); ?>
-			<!-- Footer End -->
 	</body>
 </html>

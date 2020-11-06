@@ -4,35 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/CreateWorkout.css">
-        <style>
-            
-        </style>
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-		<!-- Header Begin -->
-		<center>
-			<div class="rowBurn">
-				<div class="column">
-					<br>
-						<h3>
-							Live Workout Events
-						</h3>
-					</br>
-				</div>
-				<div class="column">
-					<br>
-						<h3>
-							<a href="Home.html">Home</a>
-							<a href="Exercise.html">Exercise</a>
-							<a href="Nutrition.html">Nutrition</a>
-							<a href="About.html">About</a>
-							<a href="Contact.html">Contact</a>
-						</h3>
-					</br>
-				</div>
-            </div>
-            
-
+		<?php include ('../html/Header.html'); ?>
             <!-- <form method="post" action="/Tests/Post/">
                 <fieldset>
                     <label class = "CB">
@@ -169,7 +144,6 @@
                 </fieldset>
             </form>
 		</center>
-        <!-- Header End -->
 
    <!--      <script type="text/javascript">
         function check_intensity()
@@ -190,5 +164,6 @@
         }
         </script> -->
 
-
+		<?php include ('../html/Footer.html'); ?>
     </body>
+</html>

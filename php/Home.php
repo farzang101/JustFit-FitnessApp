@@ -8,7 +8,6 @@
     <title> Fitness Gods | Landing page </title>
     <link rel="stylesheet" href="../css/Home.css">
 </head>
-
 <body>
     <section>
         <header>
@@ -19,12 +18,11 @@
         <div class="navbar">
             
                 <u1 class = "navigation">
-                    <li><a href="../html/Home.html">Home</a></li>
-                    <li><a href="../html/About.html">About</a></li>
-                    <li><a href="../html/Contact.html">Contact</a></li> 
+                    <li><a href="../php/Home.php">Home</a></li>
+                    <li><a href="../php/About.php">About</a></li>
+                    <li><a href="../php/Contact.php">Contact</a></li> 
                     <li><a href="../php/Login.php">Login</a></li>
                     <li><a href="../php/UserPortal.php">UserPortal</a></li>
-                    <li><input type="text" name="search" placeholder="Search..."></li>
                 </u1>
                 
             </div>
@@ -40,40 +38,19 @@
                 <p>The hardest part is the first step. The pandemic has brought that first step to most individual's home. No excuses! Allow us to show you ways to stay fit, lose weight, or even build muscle with little equipment required.</p>     
                 <br>
                 <br>
-                <a href="../html/DailyPlan.html">Get Started</a>
+                <a href="../php/DailyPlan.php">Get Started</a>
                 </div> 
             </div> 
         <br>
         
     
     </section>
-    
-
-    
-    <section2>
-    <div class="user-choices">
-            <div class ="input1">
-                <input type="button1" class="featuredBtn active" onclick="window.location.href='../html/DailyPlan.html';" 
-                value="Daily Plan" />
-        
-
-                
-                 <input type="button2"
-                        class="featuredBtn active2" onclick="window.location.href='../html/Exercise.html';" value="Exercise Header" />
-            </div>
-    <br>
-        
-            <div class = "input2">
-                <input type="button3" class="featuredBtn active3" onclick="window.location.href='../html/Nutrition.html';" value=" Nutrition" />
-                <input type="button4" 
-                       class="featuredBtn active4"
-                       onclick="window.location.href='../html/Exercise.html';" 
-                       value=" Exercise" />
-            </div>   
-    </div>
-    
-    </section2>
+	<center>
+		<div class="user-choices">
+				<input type="button" onclick="window.location.href='../php/DailyPlan.php';" value="Daily Plan" />       
+				<input type="button" onclick="window.location.href='../php/Nutrition.php';" value=" Nutrition" />
+				<input type="button" onclick="window.location.href='../php/Exercise.php';" value=" Exercise" />
+		</div>
+	</center>
     </body>
-
-
 </html>
