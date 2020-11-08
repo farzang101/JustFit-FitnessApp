@@ -11,7 +11,7 @@
 		<center>
 				<div class="column">
                     <h3>
-							Contact Information
+						Contact Information
 					</h3>
 					<p>
 						For general inquiries, please call our toll-free number at XXX-XXX-XXXX.
