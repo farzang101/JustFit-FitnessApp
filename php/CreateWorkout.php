@@ -143,7 +143,6 @@
                 
                 </fieldset>
             </form>
-		</center>
 
    <!--      <script type="text/javascript">
         function check_intensity()
