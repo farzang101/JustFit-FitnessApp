@@ -2,7 +2,6 @@ html,body
 {
     height: 100%;
     max-width: 100%;
-	background-color: black;
 }
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
@@ -70,6 +69,13 @@ header .navigation li a
     color: #fff;
     margin-right: 20px;
     text-decoration: none;
+    
+}
+header .navigation li input
+ 
+  background-color: black;
+  border: none;
+  font-size: 20px;
 }
 header .navigation li a:hover
 {
@@ -77,7 +83,8 @@ header .navigation li a:hover
 }
 
 .content
-{ 
+{
+    
     padding-right: 1px;
     width: 40%;
   
@@ -86,7 +93,9 @@ header .navigation li a:hover
 {
     font-family: serif;
     font-size: 5em;
+
     line-height: 1em;
+    
 }
 .content .contentBx p
 {
@@ -108,11 +117,55 @@ header .navigation li a:hover
 }
 
 .user-choices input{
-	background: #03a9f4;
-    height: 40px;
-    width: 33%;
-	font-size: 20px;
-	color: #fff;
-	letter-spacing: 3px;
-	border: 0px;
+    max-width: 40%;
+    height: 400px;
+    padding: 20px 300px;
+    color: coral;
+    margin-top: 15px;
+    margin-left: 90px;
+    margin-right:90px;;
+    
+}
+ .input1 input {
+    max-width: 41%;
+    height: 400px;
+    color: coral;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+ .input2 input {
+    max-width: 41%;
+    height: 400px;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: coral;
+  
+}
+
+.user-choices
+{
+    background-color: black;
+    height: 6980px;
+}
+
+.featuredBtn.active {
+  background: lightgray;
+  color: black;
+  font-size: 1.5em;
+}
+.featuredBtn.active2 {
+  background-color: lightgray;
+  color: black;
+  font-size: 1.5em;
+
+}
+.featuredBtn.active3 {
+  background-color: lightgray;
+  color: black;
+  font-size: 2em;
+}
+.featuredBtn.active4 {
+  background-color: lightgray;
+  color: black;
+ font-size: 2em;
 }
