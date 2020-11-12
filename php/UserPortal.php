@@ -21,29 +21,16 @@
     <title> Fitness Gods | Landing page </title>
     <link rel="stylesheet" href="../css/UserPortal.css">
          <link rel="stylesheet" href="../css/HeaderFooter.css">
+        
+        
     </head> 
     
     <body>
-        <header>
-            <div> 
-                <a href="#" class = "logo">Just Fit</a>
-            </div>
-			<div class="navbar">
-				<div class = "navigation">
-					<li><a href="../html/Home.html">Home</a></li>
-					<li><a href="../html/About.html">About</a></li>
-					<li><a href="../html/Contact.html">Contact</a></li> 
-					
-					<li><input type="text" name="search" placeholder="Search..."></li>
-                    
-				</div>
-                
-			</div>
-        </header>
+                <?php include ('../html/Header.html'); ?>
+
+        
         <br><br><br>
     
-        
-        
         
         
         
@@ -74,7 +61,7 @@
         
 
 
-        
+        <?php include ('../html/Footer.html'); ?>
         
     </body>
 

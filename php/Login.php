@@ -9,23 +9,15 @@
 
 <!DOCTYPE html>
 <html lang="">
-	<head>
+			<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../css/Login.css">
-		<script src=p5.js></script>
-        <div class= "style1">
-			<a href="../html/About.html">About</a>
-			<a href="../html/Contact.html">Contact</a>
-			<br>
-	</div>
-        <br>
+		<link rel="stylesheet" href="../css/Login.css"> 
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-        <!-- Header End -->
-        <br>
+		<?php include ('../html/Header.html'); ?>	
         <!-- Login Form Begin -->
-        
         <div class="container">
             <h1>Login</h1>
 			<div id="div_login">
@@ -39,11 +31,13 @@
 				<div class="sub">
 					<input type="button" value="Submit" name="but_submit" id="but_submit" />
 				</div>
+				<a href=" ../php/SignUp.php">Don't have an account?</a>
 			</div>
-		
+		<br>
 		</div>
+		<br>
         <!-- Login Form End -->
-<br>
+
         <!-- Database Login Check Script -->
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
@@ -60,13 +54,13 @@
 
    			    if( username != "" && (ciphertext.toString()) != "" ){
    			        $.ajax({
-   			            url:'../php/checkUser.php',
+   			            url:'checkUser.php',
    			            type:'post',
    			            data:{username:username,password:(ciphertext.toString())},
    			            success:function(response){
    			                var msg = "";
    			                if(response == 1){
-                       			window.location.assign("../php/UserPortal.php");
+                       			window.location.assign("UserPortal.php");
                     		}else{
                         	msg = "Invalid username and password!";
                     		}
@@ -79,15 +73,16 @@
         </script> 
         <!-- Database Login Check Script End -->
 
+
+		<!-- Footer Begin -->
 		<br>
-        <!-- Footer Begin -->
 		<center>
-			
-			
-			<div class="rowBurn">
+		<div class="rowBurn">
 				<br>
 					<h4>
-                        <hr class="hr">
+						<br>
+						<hr>
+						<br>
 						Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
 					</h4>
 			</div>

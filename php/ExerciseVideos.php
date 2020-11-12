@@ -3,12 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../css/HeaderFooter.css">
 		<link rel="stylesheet" href="../css/ExerciseVideos.css">
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-	<?php include ('../html/Header.html'); ?>
-		
+		<?php include ('../html/Header.html'); ?>		<br></br>
 		<div class="row">
 			<div class="column1" style="background-color: #444466">
 				<!-- Exercise Music - Risk of Rain 2 OST: Terra Pluviam -->
@@ -52,20 +51,16 @@
 		</div>			
 		
 		<!-- Footer Begin -->
-		<footer style="background-color: #444444">
-			<container>
-				Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-			</container>
-			<div class="navbar">
-				<div class = "navigation">
-					<li><a href="../html/Home.html">Home</a></li>
-					<li><a href="../html/About.html">About</a></li>
-					<li><a href="../html/Contact.html">Contact</a></li> 
-					<li><a href="../php/Login.php">Login</a></li>
-					<li><a href="../php/UserPortal.php">UserPortal</a></li>
-				</div>
+		<center>
+			<div class="row">
+				<br>
+					<center>
+						<h3>
+							Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
+						</h3>
+					</center>
 			</div>
-		</footer>
+		</center>
 		<!-- Footer End -->
 	</body>
 </html>

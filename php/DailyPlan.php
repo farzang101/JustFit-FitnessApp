@@ -15,16 +15,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../css/DailyPlan.css">
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
-    <br>
 	<body>
-		<!-- Header Begin -->
-		<div class= "style2">
-			<a href="../html/Home.html">Home</a>
-			<a href="../html/About.html">About</a>
-			<a href="../html/Contact.html">Contact</a>
-		</div>
-		<!-- Header End -->
+		<?php include ('../html/Header.html'); ?>
 		<center>
 			<div class="rowBurn">
 				<div class="column">
