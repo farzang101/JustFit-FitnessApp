@@ -38,11 +38,7 @@
 				<div class="column">
 					<br>
 						<h2>
-<<<<<<< HEAD
-							<a href="../html/FavoriteExercises.html">Click here to view your favorite exercises</a>
-=======
 							<a href="../php/FavoriteExercises.php">Click here to view your favorite exercises</a>
->>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957
 						</h2>
 					</br>
 				</div>
@@ -64,11 +60,7 @@
 				<div class="column">
 					<br>
 						<h2>
-<<<<<<< HEAD
-							<a href="../html/7DayPlan.html">Click here to view your 7 day plan</a>
-=======
 							<a href="../php/7DayPlan.php">Click here to view your 7 day plan</a>
->>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957
 						</h2>
 					</br>
 				</div>
