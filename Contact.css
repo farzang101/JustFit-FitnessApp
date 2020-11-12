@@ -1,0 +1,23 @@
+
+html {
+    max-width: 100%;
+    
+}
+  body{
+      margin-left: auto;
+      margin-right: auto;
+      background-color:grey;
+  }
+
+head{
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    filter: blur(20000);
+    filter: invert(70%);
+  }
+
+fieldset {
+    margin-top: 8%;
+}
