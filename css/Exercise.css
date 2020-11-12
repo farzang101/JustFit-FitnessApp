@@ -1,13 +1,189 @@
-html,body 
-{
-    
-    max-width: 100%;
-}
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sens-self;
+      max-height: 10px; 
+  }
+  head{
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    filter: blur(20000);
+    filter: invert(70%);
+  }
+  body {
+    background-image: url(../image/Simple-backgrounds.jpg);
+    max-height: 10px;;
+  }
+  .style a {
+    float: left;
+    color: #c5c4c4;
+    padding: 14px 13px;
+    text-decoration: none;
+    font-size: 17px;
+      
+  }
+  .style {
+    float: right;
+      margin-left: 40%;
+  }
+  .style input[type=text] {
+    float: right;
+    padding: 3px;
+    border: none;
+    margin-top: 8px;
+    margin-left: 10;
+    font-size: 14px;
+  }
+  .login a {
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+      color:aliceblue;
+      
+  }
+  hr {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+  }
+  h1{
+    font-weight: 10000;
+    text-align: center;
+    margin-left: 20%; 
+  }
+  h1 a{
+     font-weight: 10000;
+    text-align: center;
+    margin-left: 20%; 
+  }
+  
+  .column1 a{
+      color: aqua;
+  }
+  
+  .column1{
+      color: aliceblue;
+      font-size: 17px;
+  }
+  .column2 h3{
+      color:blue;
+      font-size: 12px;
+      text-align: center;
+  }
+  .Exercise9 {
+      color: antiquewhite;
+  }
+  .Exercise10 {
+      color: antiquewhite;
+  }
+  
+  .Exercise11 {
+      color: antiquewhite;
+  }
+  .Exercise12 {
+      color: antiquewhite;
+  }
+  .Exercise13 {
+      color: antiquewhite;
+  }
+  .Exercise14 {
+      color: antiquewhite;
+  }
+  .Exercise15 {
+      color: antiquewhite;
+  }
+  .Exercise16 {
+      color: antiquewhite;
+  }
+  .Exercise17 {
+      color: antiquewhite;
+  }
+  .Exercise18 {
+      color: antiquewhite;
+  }
+  .Exercise19 {
+      color: antiquewhite;
+  }
+  .Exercise20 {
+      color: antiquewhite;
+  }
+  .Exercise21 {
+      color: antiquewhite;
+  }
+  .Exercise22 {
+      color: antiquewhite;
+  }
+  .Exercise23 {
+      color: antiquewhite;
+  }
+  .Exercise24 {
+      color: antiquewhite;
+  }
+  .Exercise25 {
+      color: antiquewhite;
+  }
+  .Exercise26 {
+      color: antiquewhite;
+  }
+  .Exercise27 {
+      color: antiquewhite;
+  }
+  .Exercise28 {
+      color: antiquewhite;
+  }
+  .Exercise29 {
+      color: antiquewhite;
+  }
+  .Exercise30 {
+      color: antiquewhite;
+  }
+  .Exercise31 {
+      color: antiquewhite;
+  }
+  .Exercise32 {
+      color: antiquewhite;
+  }
+  .Exercise33 {
+      color: antiquewhite;
+  }
+  .Exercise34 {
+      color: antiquewhite;
+  }
+  .Exercise35 {
+      color: antiquewhite;
+  }
+  .Exercise36 {
+      color: antiquewhite;
+  }
+  .Exercise37 {
+      color: antiquewhite;
+  }
+  .Exercise38 {
+      color: antiquewhite;
+  }
+  .Exercise39 {
+      color: antiquewhite;
+  }
+  .Exercise40 {
+      color: antiquewhite;
+  }
+  .Exercise41 {
+      color: antiquewhite;
+  }
+  .Exercise42 {
+      color: antiquewhite;
+  }
+  .Exercise43 {
+      color: antiquewhite;
+  }
+  .Exercise44 {
+      color: antiquewhite;
+  }
+  .Exercise45 {
+      color: antiquewhite;
+  }
+  .Exercise46 {
+      color: antiquewhite;
+  }

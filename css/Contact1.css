@@ -1,17 +1,7 @@
-
-head{
-    height: 100px;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    filter: blur(20000);
-    filter: invert(70%);
-  }
-  
   body{
       background-color: rgb(149, 33, 196);
   }
-  .style2 a {
+.style1 a {
   float: left;
   color: #c5c4c4;
   text-align: center;
@@ -19,12 +9,12 @@ head{
   text-decoration: none;
   font-size: 17px;
    
-  }
-  .style2 {
+}
+.style1 {
   float: right;
-  } 
-  
-  .column {
+} 
+
+.column {
     text-align: center;
     font-size: 20px;
     margin-top: 10%;
@@ -32,11 +22,14 @@ head{
     font-family: cursive;
     color: cornsilk;
     
-  }
-  .rowBurn{
+}
+.rowBurn{
     color: blanchedalmond
-  }
+}
   hr{
         color: rgb(11, 8, 15);
-        margin-top: 20%;
-  }
+        margin-top: 40%;
+    
+}
+    
+

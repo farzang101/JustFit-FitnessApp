@@ -11,79 +11,28 @@ body {
 
 }
 
-header 
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
-    padding:  30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo
-{
-  
-    position: relative;
-    font-size: 2em;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-header .navbar 
-{
-   
-    
-
-}
-header .navigation
-{
- 
-    position: relative;
-    display: flex;
-}
-header .navigation li
-{
-    list-style: none;
-}
-header .navigation li a
-{
-    padding-right: 18px;
-    border-right: 8px solid black;
-    font-size: 1.2em;
-    display: inline-block;
-    color: #fff;
-    margin-right: 20px;
-    text-decoration: none;
-    
-}
-header .navigation li input
- 
-  background-color: black;
-  border: none;
-  font-size: 20px;
-}
-header .navigation li a:hover
-{
-    color: #o3a9f4;
-}
 
 
 .portal-heading {
+    
     margin-left: auto;
     margin-right: auto;
     max-width: 30%;
-    height: 200px;
+   
     text-align: center;
     
 }
 
+.portal-heading h1 {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+   
+   
+    
+}
 
- 
 
 
 .card1 {
@@ -132,5 +81,12 @@ header .navigation li a:hover
 .container {
   padding: 150px 30px;
     transition: 1.2s;
+    text-decoration-color: black;
+}
+.container h2 {
+    color: black;
+}
+.container p {
+    color: black;
 }
 

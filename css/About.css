@@ -9,66 +9,7 @@ body {
     background-color: #fff;
     display: block;
 }
-header 
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-header .logo
-{
-  
-    position: relative;
-    font-size: 2em;
-    color: black;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-header .navbar 
-{
-   
-    
-
-}
-header .navigation
-{
- 
-    position: relative;
-    display: flex;
-}
-header .navigation li
-{
-    list-style: none;
-}
-header .navigation li a
-{
-    padding-right: 18px;
-    border-right: 8px solid black;
-    font-size: 1.2em;
-    display: inline-block;
-    color: black;
-    margin-right: 20px;
-    text-decoration: none;
-    
-}
-header .navigation li input
- 
-  background-color: black;
-  border: none;
-  font-size: 20px;
-}
-header .navigation li a:hover
-{
-    color: #o3a9f4;
-}
 @media screen and (min-width: 768px)
 .jumbotron {
     padding-top: 48px;
@@ -101,7 +42,6 @@ h1 {
 }
 .col-sm-1 {
     float: left;
-    margin-ri
 }
 
 .col-sm-2 {
