@@ -12,31 +12,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--<link rel="stylesheet" href="../css/style.css"> -->
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-        <!-- Header Begin -->
-        <center>
-            <div class="rowBurn">
-                <div class="column">
-                    <br>
-                        <h3>
-                            Live Workout Events
-                        </h3>
-                    </br>
-                </div>
-                <div class="column">
-                    <br>
-                        <h3>
-                            <a href="../html/Home.html">Home</a>
-                            <a href="../html/About.html">About</a>
-                            <a href="../html/Contact.html">Contact</a>
-                        </h3>
-                    </br>
-                </div>
-            </div>
-        </center>
-        <!-- Header End -->
+		<?php include ('../html/Header.html'); ?>
 
         <!-- Login Form Begin -->
         <div class="container">
@@ -102,15 +82,7 @@
 
 
         <!-- Footer Begin -->
-		<center>
-			<div class="rowBurn">
-				<br>
-					<h4>
-						Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-					</h4>
-				</br>
-			</div>
-		</center>
+		
 		<!-- Footer End -->
 	</body>
 </html>
