@@ -1,9 +1,22 @@
+<<<<<<< HEAD
   
+=======
+<?php
+	include "../php/config.php";
+
+	// Check user login or not
+	if(isset($_SESSION['uname'])){
+		header('Location: ../php/UserPortal.php');
+	}
+?>
+
+>>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957
 <!DOCTYPE html>
 <html lang="">
-	<head>
+			<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
 		<link rel="stylesheet" href="../css/Login.css">
 		<script src=p5.js></script>
         <div class= "style1">
@@ -16,6 +29,13 @@
 	<body>
         <!-- Header End -->
         <br>
+=======
+		<link rel="stylesheet" href="../css/Login.css"> 
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
+	</head>
+	<body>
+		<?php include ('../html/Header.html'); ?>	
+>>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957
         <!-- Login Form Begin -->
         
         <div class="container">
@@ -31,9 +51,11 @@
 				<div class="sub">
 					<input type="button" value="Submit" name="but_submit" id="but_submit" />
 				</div>
+				<a href=" ../php/SignUp.php">Don't have an account?</a>
 			</div>
-		
+		<br>
 		</div>
+		<br>
         <!-- Login Form End -->
 <br>
         <!-- Database Login Check Script -->
@@ -66,6 +88,7 @@
         </script> 
         <!-- Database Login Check Script End -->
 
+<<<<<<< HEAD
 		<br>
         <!-- Footer Begin -->
 		<center>
@@ -80,5 +103,9 @@
 			</div>
 		</center>
 		<!-- Footer End -->
+=======
+
+		<?php include ('../html/Footer.html'); ?>
+>>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957
 	</body>
 </html>
