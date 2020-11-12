@@ -3,87 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD:html/Exercise.html
-		<script src=p5.js></script>
-		<link rel="stylesheet" href="../css/Exercise.css">
-	</head>
-	<body>
-		<!-- Header Begin -->
-		<center>
-<<<<<<< HEAD
-			<div class="rowBurn">
-				<div class="column">
-					<br>
-						<h3>
-							Live Workout Events
-						</h3>
-					</br>
-				</div>
-				<div class="column">
-					<br>
-						<h3>
-							<a href="html/Home.html">Home</a>
-							<a href="html/Exercise.html">Exercise</a>
-							<a href="html/Nutrition.html">Nutrition</a>
-							<a href="html/About.html">About</a>
-							<a href="html/Contact.html">Contact</a>
-						</h3>
-					</br>
-				</div>
-			</div>
-=======
-             <br>
-			<div class= "style">
-				<a href="../html/Home.html">Home</a>
-			<a href="../html/About.html">About</a>
-			<a href="../html/Contact.html">Contact</a>
-		  </div>
-            
-		  
->>>>>>> 7049df032c140438b6955728bb8a274fe4374d49
-		</center>
-		<!-- Header End -->
-		<br>
-		<center>
-<<<<<<< HEAD
-			
-			<!-- <div class="placeTextureBurn">
-				<br>
-					<h3>
-						View Your 7 Day Plan
-					</h3>
-				</br>
-			</div> -->
-		
-			<div class="row">
-				<!--
-				<div class="column">
-					<img src="image/BiggerInfusion.png" alt "Exercise">
-				</div>
-			-->
-				<div class="column">
-					<br>
-						<h2>
-							<a href="html/Login.html">Log in to view your 7 day plan</a>
-						</h2>
-					</br>
-				</div>
-			</div> 
-=======
-            <div class="login">
-			<a  href="../php/Login.php"> Login</a>
-		  </div>
->>>>>>> 7049df032c140438b6955728bb8a274fe4374d49
-		</center>
-		
-=======
 		<link rel="stylesheet" href="../css/Exercise.css">
 		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
 		<?php include ('../html/Header.html'); ?>
 		<br>		
->>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957:php/Exercise.php
 		<div class="Exercise1">
 			<h2>
 				<br>
@@ -180,15 +105,9 @@
                 <p style="color:#FF1493 ; margin-left: 3%; font-weight: 600; font-size: 16px;">Name: Leg Raise </p>
 					<p style="color: white; font-weight: 600; font-size: 16px">Description:</p> <p style="color: #FFFAF0; font-weight: 600; font-size: 16px; text-align: center;"> Lie face up with your legs extended and hands at your sides or tucked underneath your hips for extra support. Slowly raise your legs, keeping them together and as straight as possible, until the soles of your shoes are facing the ceiling. Then, slowly lower your legs back down. Don’t let your feet touch the floor; instead, keep them hovering a few inches off. That's 1 rep. As you do this move, make sure to keep your lower back flat on the floor. If you're having a tough time doing that, don't lower your legs as far.
             </p>
-<<<<<<< HEAD:html/Exercise.html
 				<br>
 					 <p style="color: #A52A2A;font-weight: 1000";>Intensity: 
 				<br>
-=======
-				<br>
-					 <p style="color: #A52A2A;font-weight: 1000";>Intensity: 
-				<br>
->>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957:php/Exercise.php
             <p style="color: #A52A2A;font-weight: 1000";>	Equipment: None</p>
 				 <p style="color: #A52A2A;font-weight: 1000";>	Type: Core
             </p>
@@ -1153,64 +1072,12 @@
 				<div class="column1">
 					<br>
 						<h2>
-<<<<<<< HEAD:html/Exercise.html
-<<<<<<< HEAD
-							<a href="html/Exercise.html">Exercise Archive</a>
-=======
-							<a href="../html/Exercise.html">Exercise Archive</a>
->>>>>>> 7049df032c140438b6955728bb8a274fe4374d49
-						</h2>
-						<p>
-							Our exercises are hand selected  and exercise engineers who.
-							Our exercises are hand selected by and exercise engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who.
-							Our exercises are hand selected by nutrition and  engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who
-							Our exercises are hand selected by nutrition and exercise engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who
-							Our exercises are hand  by nutrition and exercise engineers who
-							Our are hand by nutrition and exercise engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who.
-							Our exercises are hand by and exercise engineers who
-							Our exercises are hand selected by nutrition and exercise engineers who
-							Our exercises are hand selected by nutrition and exercise engineers who
-							Our are hand selected by nutrition and exercise engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who.
-							Our exercises are hand selected by nutrition and exercise engineers who.
-						</p>
-=======
 							<a href="../php/Exercise.php">Exercise Archive</a>
 						</h2>
->>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957:php/Exercise.php
 				</div>
 			</div> 
 		</center>
         <hr>
-<<<<<<< HEAD:html/Exercise.html
-		<!-- Footer Begin -->
-		<center>
-			<div class="rowBurn">
-				<br>
-					<div class="column2">
-						<h3>
-							Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-						</h3>
-					</div>
-<<<<<<< HEAD
-					<div class="column">
-						<h3>
-							<a href="html/About.html">About</a>
-							<a href="html/Contact.html">Contact</a>
-						</h3>
-					</div>
-				</br>
-=======
->>>>>>> 7049df032c140438b6955728bb8a274fe4374d49
-			</div>
-		</center>
-		<!-- Footer End -->
-=======
 		<?php include ('../html/Footer.html'); ?>
->>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957:php/Exercise.php
 	</body>
 </html>
