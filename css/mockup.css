@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+    height: 1080px;;
+}
+header 
+{
+
+    position: fixed;
+    width: 100%;
+    padding:  30px 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header .logo
+{
+    
+    position: absolute;
+    font-size: 1.5em;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+header .navigation
+{
+ 
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+}
+header .navigation li a
+{
+    padding-right: 18px;
+    border-right: 8px solid black;
+    font-size: 1.2em;
+    display: inline-block;
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+    
+}
+header .navigation li input
+ 
+  background-color: black;
+  border: none;
+  font-size: 20px;
+}
+header .navigation li a:hover
+{
+    color: #o3a9f4;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.image h2{
+    
+}
+.image img{
+    
+    width: 20%;
+    border: 10px solid transparent;
+  padding: 15px;
+}
+.image ul{
+    color: mediumvioletred;
+}
+.image p{
+    color: plum;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+    border-right-color: black;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+    border-right-color: black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+
+@media screen and (max-width: 600px) {
+  .header, .logo {
+    width: 100%;
+  }

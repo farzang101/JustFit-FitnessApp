@@ -3,8 +3,27 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../css/Contact.css">
+        <link rel="stylesheet" href="../css/HeaderFooter.css">
+
 	</head>
+    
+    <header>
+            <container> 
+                <a href="../html/Home.html" class = "logo">Just Fit</a>
+            </container>
+            
+        <div class="navbar">
+            
+                <u1 class = "navigation">
+                    <li><a href="../html/Home.html">Home</a></li>
+                    <li><a href="../html/About.html">About</a></li>
+                    <li><a href="../html/Login.php">Login</a></li>
+                    <li><a href="../html/UserPortal.html">User Portal</a></li>
+                    <li><input type="text" name="search" placeholder="Search..."></li>
+                </u1>
+                
+            </div>
+        </header>
 	<body>
 	<!-- Header Begin -->
 		<div class= "style2">
@@ -14,40 +33,32 @@
 		</div>
 	<!-- Header End -->
          <br>
-		<center>
-				<div class="column">
-                    <h3>
-							Contact Information
-					</h3>
-					<p>
-						For general inquiries, please call our toll-free number at XXX-XXX-XXXX.
-					</p>
-					<p>
-						To contact our returns department, please email returns@XXXXX.com.
-					</p>
-					<p>
-						For job inquiries, please email us at jobs@XXXXX.com.
-					</p>
-                    
-				</div>
-		</center>
-        <hr>
-		<center>
-		<div class="rowBurn">
-					Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-		</div>
-		</center>
-	
-		<!-- Footer Begin -->
-       	<center>
-			<div class="rowBurn">
-				<br>
-					<h4>
-						Live Workout Events was developed by CPSC-362 Group F. All Rights Reserved.
-					</h4>
-				</br>
+	<section id="contact">
+			<div class="container">
+				<h2>Contact</h2>
+				<p>Got any questions? Having some problems signing up? Email us at <a href="mailto:support@Outrun.com">fghader@csu.fullerton.edu</a> for help.</p>
+				
+				<!-- Dummy email form -->
+				<form id="contact-form" action="php/contact.php" method="post">
+					<div class="field">
+						<label>Name</label>
+						<input type="text" name="Name" maxlength="100" required />
+					</div>
+					
+					<div class="field">
+						<label>Email</label>
+						<input type="email" name="Email" maxlength="200" required />
+					</div>
+					
+					<div class="field">
+						<label>Write your message here</label>
+						<textarea minlength="20" maxlength="2000" name="Message"></textarea>
+					</div>
+					
+					<button type="submit" class="button button-block">Send Message</button>
+				</form>
 			</div>
-		</center>
-		<!-- Footer End -->		
+		</section>
+
 	</body>
 </html>

@@ -1,0 +1,132 @@
+ /* 
+If we include the HeaderFooter.css use the following code directly after the opening body tag so that it matches correctly with the css. Change things as needed (color of logo/background color of the header/unnecessary items in the navbar causing redundancy/etc) -Farzan
+
+<header>
+            <container> 
+                <a href="../html/Home.html" class = "logo">Just Fit</a>
+            </container>
+            
+        <div class="navbar">
+            
+                <u1 class = "navigation">
+                    <li><a href="../html/Home.html">Home</a></li>
+                    <li><a href="../html/About.html">About</a></li>
+                    <li><a href="../html/Contact.html">Contact</a></li> 
+                    <li><a href="../html/Login.php">Login</a></li>
+                    <li><a href="../html/UserPortal.html">User Portal</a></li>
+                    <li><input type="text" name="search" placeholder="Search..."></li>
+                </u1>
+                
+            </div>
+        </header>
+        */
+header 
+{
+    
+    position: relative;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo
+{
+    position: relative;
+    font-size: 2em;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+header .navigation
+{
+    
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+}
+header .navigation li a
+{
+    padding-right: 18px;
+    border-right: 8px solid black;
+    font-size: 1.2em;
+    display: inline-block;
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+    
+}
+header .navigation li input
+ 
+  background-color: black;
+  border: none;
+  font-size: 20px;
+}
+header .navigation li a:hover
+{
+    color: #o3a9f4;
+}
+
+footer 
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	color: black;
+}
+
+footer .logo
+{
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+footer .navigation
+{
+    
+    position: relative;
+    display: flex;
+}
+footer .navigation li
+{
+    list-style: none;
+}
+footer .navigation li a
+{
+    padding-right: 18px;
+    border-right: 8px solid black;
+    font-size: 1.2em;
+    display: inline-block;
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    
+}
+footer .navigation li input
+ 
+  background-color: black;
+  border: none;
+  font-size: 20px;
+}
+footer .navigation li a:hover
+{
+    color: #o3a9f4;
+}
