@@ -76,17 +76,6 @@ html{
     left: 100px;
     
     }
-    h4{
-        text-align: end;
-        font-family: monospace;
-        float: right;
-        font-size: 12px;
-        font-style: normal;
-    }
-    hr{
-        color: rgb(11, 8, 15);
-        margin-top: 40%;
-    }
 
 .column {
     text-align: center;
@@ -98,4 +87,11 @@ html{
 p{
     font-size: 20px;
     font-style: normal;
+}
+.rowBurn{
+  color: blanchedalmond
+}
+hr{
+      color: rgb(11, 8, 15);
+      margin-top: 30%;
 }
