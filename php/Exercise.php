@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD:html/Exercise.html
 		<script src=p5.js></script>
 		<link rel="stylesheet" href="../css/Exercise.css">
 	</head>
@@ -75,6 +76,14 @@
 >>>>>>> 7049df032c140438b6955728bb8a274fe4374d49
 		</center>
 		
+=======
+		<link rel="stylesheet" href="../css/Exercise.css">
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
+	</head>
+	<body>
+		<?php include ('../html/Header.html'); ?>
+		<br>		
+>>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957:php/Exercise.php
 		<div class="Exercise1">
 			<h2>
 				<br>
@@ -171,9 +180,15 @@
                 <p style="color:#FF1493 ; margin-left: 3%; font-weight: 600; font-size: 16px;">Name: Leg Raise </p>
 					<p style="color: white; font-weight: 600; font-size: 16px">Description:</p> <p style="color: #FFFAF0; font-weight: 600; font-size: 16px; text-align: center;"> Lie face up with your legs extended and hands at your sides or tucked underneath your hips for extra support. Slowly raise your legs, keeping them together and as straight as possible, until the soles of your shoes are facing the ceiling. Then, slowly lower your legs back down. Don’t let your feet touch the floor; instead, keep them hovering a few inches off. That's 1 rep. As you do this move, make sure to keep your lower back flat on the floor. If you're having a tough time doing that, don't lower your legs as far.
             </p>
+<<<<<<< HEAD:html/Exercise.html
 				<br>
 					 <p style="color: #A52A2A;font-weight: 1000";>Intensity: 
 				<br>
+=======
+				<br>
+					 <p style="color: #A52A2A;font-weight: 1000";>Intensity: 
+				<br>
+>>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957:php/Exercise.php
             <p style="color: #A52A2A;font-weight: 1000";>	Equipment: None</p>
 				 <p style="color: #A52A2A;font-weight: 1000";>	Type: Core
             </p>
@@ -1138,6 +1153,7 @@
 				<div class="column1">
 					<br>
 						<h2>
+<<<<<<< HEAD:html/Exercise.html
 <<<<<<< HEAD
 							<a href="html/Exercise.html">Exercise Archive</a>
 =======
@@ -1162,10 +1178,15 @@
 							Our exercises are hand selected by nutrition and exercise engineers who.
 							Our exercises are hand selected by nutrition and exercise engineers who.
 						</p>
+=======
+							<a href="../php/Exercise.php">Exercise Archive</a>
+						</h2>
+>>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957:php/Exercise.php
 				</div>
 			</div> 
 		</center>
         <hr>
+<<<<<<< HEAD:html/Exercise.html
 		<!-- Footer Begin -->
 		<center>
 			<div class="rowBurn">
@@ -1188,5 +1209,8 @@
 			</div>
 		</center>
 		<!-- Footer End -->
+=======
+		<?php include ('../html/Footer.html'); ?>
+>>>>>>> f9139fa37826586fe74466ea4aa545b00fc34957:php/Exercise.php
 	</body>
 </html>
