@@ -1,4 +1,7 @@
-
+html{
+    background-image: url(../image/Nutrition1.jpg), url(../image/Nutrition.jpg);
+    margin-right: 20%;
+}
 head{
     height: 100px;
     position: fixed;
@@ -8,22 +11,37 @@ head{
     filter: invert(70%);
   }
   
-  body{
-      background-color: rgb(149, 33, 196);
+/*--------------------First image_________________________*/
+button {
+    background-color: #4CAF50; /* Green */
+    background-size: 14px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
   }
-  .style2 a {
-  float: left;
-  color: #c5c4c4;
-  text-align: center;
-  padding: 14px 14px;
-  text-decoration: none;
-  font-size: 17px;
-   
-  }
-  .style2 {
-  float: right;
-  } 
   
+.image h2{
+    margin-top: 10%;
+}
+.image img{
+    width: 45%;
+    border: 10px solid transparent;
+  padding: 15px;
+    border-image: url(../image/GreenTexture.png) 30 30 stretch;
+}
+.image ul{
+    color: mediumvioletred;
+}
+.image p{
+    color: plum;
+}
   .column {
     text-align: center;
     font-size: 20px;
@@ -33,10 +51,62 @@ head{
     color: cornsilk;
     
   }
-  .rowBurn{
-    color: blanchedalmond
-  }
+/*--------------------Second image_________________________*/
+.image2 h2{
+    margin-top: 10%;
+}
+.image2 img{
+    width: 50%;
+    border: 10px solid transparent;
+  padding: 15px;
+    border-image: url(../image/GreenTexture.png) 30 30 stretch;
+}
+.image2 ul{
+    color: blue;
+}
+.image2 p{
+    color: #006400;
+}
+.image2 li{
+    color: #20B2AA;
+    
+}
+/*--------------------Third image_________________________*/
+.image3 h2{
+    margin-top: 10%;
+}
+.image3 img{
+    width: 45%;
+    border: 10px solid transparent;
+  padding: 15px;
+    border-image: url(../image/GreenTexture.png) 30 30 stretch;
+}
+.image3 ul{
+    color: mediumvioletred;
+}
+.image3 p{
+    color: #2F4F4F;
+}
+/*--------------------Fourth image_________________________*/
+.image4 h2{
+    margin-top: 10%;
+}
+.image4 img{
+    width: 30%;
+    height: 30%;
+    border: 9px solid transparent;
+    padding: 15px;
+    border-image: url(../image/GreenTexture.png) 30 30 stretch;
+}
+.image4 ul{
+    color: mediumvioletred;
+}
+.image4 p{
+    color: #2F4F4F;
+}
+/*--------------------Fifth image_________________________*/
   hr{
         color: rgb(11, 8, 15);
-        margin-top: 20%;
+        margin-top: 10%;
+        
   }
