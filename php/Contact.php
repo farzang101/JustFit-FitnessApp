@@ -6,8 +6,6 @@
         <link rel="stylesheet" href="../css/Contact.css">
         <link rel="stylesheet" href="../css/HeaderFooter.css">
     </head>
-            <br><br><br><br>
-
     <body>
         <?php include ('../html/Header.html'); ?>
     
