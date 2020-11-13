@@ -1,11 +1,23 @@
-body{
-    background-image: url(../image/Simple-backgrounds.jpg);
-}
 
-.column {
-  background-color: rgba(0,0,0,.2);
-  color: white;
-  text-align: center;
-  font-size: 35px;
-  margin-top: 10%;
+html {
+    max-width: 100%;
+    
+}
+  body{
+      margin-left: auto;
+      margin-right: auto;
+      background-color:grey;
+  }
+
+head{
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    filter: blur(20000);
+    filter: invert(70%);
+  }
+
+fieldset {
+    margin-top: 8%;
 }
