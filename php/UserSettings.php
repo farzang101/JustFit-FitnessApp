@@ -90,6 +90,74 @@
             
             </div>
 
+            <br>
+        <!-- Database Login Check Script -->
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/x64-core.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/sha3.min.js"></script>
+   
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+   			$("#but_submit").click(function(){
+   			    
+   			});
+		});			
+        </script> 
+        <!-- Database Login Check Script End -->
+
+        <!-- Database Login Check Script -->
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+   			$("#but_submit").click(function(){
+                var username = $("#uname").val().trim();
+				var password = $("#txt_renewpwd").val().trim();
+				   
+				var ciphertext = CryptoJS.SHA3(password, { outputLength: 224 });
+
+   			    if( username != "" && (ciphertext.toString()) != "" ){
+   			        $.ajax({
+   			            url:'../php/checkUser.php',
+   			            type:'post',
+   			            data:{username:username,password:(ciphertext.toString())},
+   			            success:function(response){
+   			                var msg = "";
+   			                if(response == 1){
+                    		}else{
+                        	msg = "Invalid username and password!";
+                    		}
+   			            }
+   			        });
+   			    }
+
+				var password = $("#txt_newpwd").val().trim();
+                var passCheck = $("#txt_pwdre").val().trim();
+				   
+				var ciphertext = CryptoJS.SHA3(password, { outputLength: 224 });
+                var ciphertextCheck = CryptoJS.SHA3(passCheck, { outputLength: 224 });
+
+   			    if( username != "" && (ciphertext.toString()) != "" && (ciphertext.toString() == ciphertextCheck.toString())){
+   			        $.ajax({
+   			            url:'../php/addUser.php',
+   			            type:'post',
+   			            data:{username:username,password:(ciphertext.toString())},
+   			            success:function(response){
+   			                var msg = "Password changed successfully!";
+   			                if(response == 1){
+                       			window.location.assign("../php/UserPortal.php");
+                    		}else if (response == 2) {
+                            } else {
+                        	    msg = "Invalid password!";
+                    		}
+                    		$("#message").html(msg);
+   			            }
+   			        });
+   			    }
+   			});
+		});			
+        </script> 
+        <!-- Database Login Check Script End -->
+
         </div>
     </body>
 </html>
