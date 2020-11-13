@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-		<?php include ('../html/Header.html'); ?>		<br></br>
+		<?php include ('../html/Header.html'); ?>
 		<div class="row">
 			<div class="column1" style="background-color: #444466">
 				<!-- Exercise Music - Risk of Rain 2 OST: Terra Pluviam -->
