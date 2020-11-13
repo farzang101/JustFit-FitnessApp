@@ -4,15 +4,18 @@
     
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width"> 
     <title> Fitness Gods | Landing page </title>
     <link rel="stylesheet" href="../css/Home.css">
 </head>
+
 <body>
+            <?php include ('../html/Header.html'); ?>
+
     <section>
         <header>
             <container> 
-                <a href="#" class = "logo">Just Fit</a>
+                <a href="../php/Home.php" class = "logo">Just Fit</a>
             </container>
             
         <div class="navbar">
@@ -22,7 +25,8 @@
                     <li><a href="../php/About.php">About</a></li>
                     <li><a href="../php/Contact.php">Contact</a></li> 
                     <li><a href="../php/Login.php">Login</a></li>
-                    <li><a href="../php/UserPortal.php">UserPortal</a></li>
+                    <li><a href="../php/UserPortal.php">User Portal</a></li>
+                    <li><input type="text" name="search" placeholder="Search..."></li>
                 </u1>
                 
             </div>
@@ -32,25 +36,45 @@
         <div class="content">
             <div class="contentBx">
                 <h2> Tough Times
-                 <br>
+                 
                     Stronger Minds</h2>
                 <br>
-                <p>The hardest part is the first step. The pandemic has brought that first step to most individual's home. No excuses! Allow us to show you ways to stay fit, lose weight, or even build muscle with little equipment required.</p>     
                 <br>
                 <br>
-                <a href="../php/DailyPlan.php">Get Started</a>
+                <a href="../php/SignUp.php">Get Started</a>
                 </div> 
             </div> 
         <br>
         
     
     </section>
-	<center>
-		<div class="user-choices">
-				<input type="button" onclick="window.location.href='../php/DailyPlan.php';" value="Daily Plan" />       
-				<input type="button" onclick="window.location.href='../php/Nutrition.php';" value=" Nutrition" />
-				<input type="button" onclick="window.location.href='../php/Exercise.php';" value=" Exercise" />
-		</div>
-	</center>
-    </body>
+    
+<br><br><br><br><br><br>
+    
+    <div class="container">
+
+    <div class="card1"> 
+            <a href="../php/Nutrition.php">Nutrition</a>
+            <p>View Your Nutritional Content</p> 
+        </div>
+        <br>
+        
+    <div class="card2">
+        <a href="../php/Workouts.php">
+            Workouts</a>
+            <p>Browse and edit your saved workouts</p> 
+        </div>
+        <br>
+
+     <div class="card3">
+         <a href= ..php/UserPortal.php>User Portal  </a>
+            <p>View Your Favorite Fitness Plans </p> 
+        </div>
+        
+</div> 
+    <?php include ('../html/Footer.html'); ?>
+    
+</body>
+
+
 </html>
