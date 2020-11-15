@@ -1,9 +1,18 @@
+body {
+   min-height: 400px;
+   margin-bottom: 100px;
+   clear: both;
+}
+
 header 
 {
+	font-size: 18px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,8 +20,9 @@ header
 
 header .logo
 {
+    padding-left: 40px;
     position: relative;
-    font-size: 2em;
+    font-size: 24px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -22,9 +32,9 @@ header .logo
 
 header .navigation
 {
-    
     position: relative;
     display: flex;
+    padding-right: 20px;
 }
 header .navigation li
 {
@@ -32,20 +42,29 @@ header .navigation li
 }
 header .navigation li a
 {
-    padding-right: 18px;
+    padding-right: 12px;
+    padding-left: 12px;
     border-right: 8px solid black;
     font-size: 1.2em;
     display: inline-block;
     color: #fff;
-    margin-right: 20px;
     text-decoration: none;
-    
 }
-header .navigation li input
- 
+
+header .navigation nl a
+{
+    padding-left: 12px;
+    font-size: 1.2em;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .navigation li input {
   background-color: black;
   border: none;
   font-size: 20px;
+  margin-right: 10px;
 }
 header .navigation li a:hover
 {
@@ -54,52 +73,13 @@ header .navigation li a:hover
 
 footer 
 {
+    flex-shrink: 0;
+	font-size: 20px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     clear: both;
-    position: absolute;
+    position:fixed;
 	color: #ffffff;
+    padding: 5px 5px 0px 5px;
 	bottom:0;
 	width:100%;
-	height:60px;   /* Height of the footer */
-}
-
-footer .logo
-{
-    position: relative;
-    font-size: 2em;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-
-footer .navigation
-{
-    position: relative;
-    display: flex;
-}
-footer .navigation li
-{
-    list-style: none;
-}
-footer .navigation li a
-{
-    padding-right: 18px;
-    border-right: 8px solid black;
-    font-size: 1.2em;
-    display: inline-block;
-    color: #fff;
-    margin-right: 20px;
-    text-decoration: none;
-    
-}
-footer .navigation li input
- 
-  background-color: black;
-  border: none;
-  font-size: 20px;
-}
-footer .navigation li a:hover
-{
-    color: #o3a9f4;
 }
