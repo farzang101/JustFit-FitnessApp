@@ -9,7 +9,7 @@
 
 <!DOCTYPE html>
 <html lang="">
-			<head>
+	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../css/Login.css"> 
@@ -36,6 +36,7 @@
 		<br>
 		</div>
 		<br>
+
         <!-- Login Form End -->
 
         <!-- Database Login Check Script -->
@@ -74,6 +75,6 @@
         <!-- Database Login Check Script End -->
 
 
-		<?php include ('../html/Footer.html'); ?>
+        <?php include ('../html/Footer.html'); ?>
 	</body>
 </html>

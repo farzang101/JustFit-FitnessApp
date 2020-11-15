@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../css/Nutrition.css">
+        <link rel="stylesheet" href="../css/HeaderFooter.css">
 		<script src=p5.js></script>
 	
          <br>
