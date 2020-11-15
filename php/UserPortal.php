@@ -13,56 +13,46 @@
 	}
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width"> 
-    <title> Fitness Gods | Landing page </title>
-    <link rel="stylesheet" href="../css/UserPortal.css">
-         <link rel="stylesheet" href="../css/HeaderFooter.css">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/UserPortal.css">
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
+	</head>
+	<body>
+		<?php include ('../html/Header.html'); ?>
+        
+    	<div class = "portal-heading">
+        	<h1 style="text-align: center"> YOUR PORTAL   </h1>
+        
+        </div>
         
         
-    </head> 
-    
-    <body>
-                <?php include ('../html/Header.html'); ?>
-
+    	<div class="card1">
+  			<div class="container">
+    			<span><h2>Nutrition</h2></span> 
+    			<p>View Your Nutritional Content</p> 
+  			</div>
+		</div>
         
-        <br><br><br>
-    
+		<div class="card2">
+  			<div class="container">
+    			<span><h2>Workouts</h2></span> 
+    			<p>Browse and edit your saved workouts</p> 
+  			</div>
+		</div>
         
+		<div class="card3">
+  			<div class="container">
+    			<span><h2>Fitness Plans</h2></span> 
+    			<p>View Your Favorite Fitness Plans </p> 
+  			</div>
+		</div>
         
-        
-        <h1>Your Portal</h1>
-        <p>Manage your favorite workout content here. Select a card to get started.</p>
-
-
-    <div class="card1">
-  <div class="container">
-    <span><h2>Nutrition</h2></span> 
-    <p>View Your Nutritional Content</p> 
-  </div>
-</div>
-        
-<div class="card2">
-  <div class="container">
-    <span><h2>Workouts</h2></span> 
-    <p>Browse and edit your saved workouts</p> 
-  </div>
-</div>
-        
-<div class="card3">
-  <div class="container">
-    <span><h2>Fitness Plans</h2></span> 
-    <p>View Your Favorite Fitness Plans </p> 
-  </div>
-</div>
         
 
-
-        <?php include ('../html/Footer.html'); ?>
-        
     </body>
 
 
