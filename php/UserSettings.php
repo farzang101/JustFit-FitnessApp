@@ -10,7 +10,9 @@
 	if(isset($_POST['but_logout'])){
 		session_destroy();
 		header('Location: ../html/Home.html');
-	}
+    }
+    
+    $session_value=(isset($_SESSION['uname']))?$_SESSION['uname']:'';
 ?>
 
 <!DOCTYPE html >
@@ -30,8 +32,6 @@
                 <h1 style="text-align: center"> Change Your User Settings  </h1>
             </div>
 
-            <div class="container">
-
                 <div id="div_signup">
                 <h2 style="text-align: center"> Change Your Password  </h2>
                     <div id="message"></div>
@@ -44,14 +44,9 @@
                     <div>
                         <input type="password" class="textbox" id="txt_renewpwd" name="txt_renewpwd" placeholder="Re-Type New Password"/>
                     </div>
-                    <div>
-                        <input type="button" value="Submit" name="but_submit" id="but_submit" />
-                    </div>
                 </div>
             
-            </div>
 
-            <div class="container">
 
                 <div id="div_setDiff">
                 <h2 style="text-align: center"> Set your preferred exercise difficulty level  </h2>
@@ -59,6 +54,7 @@
                     <div id="message1"></div>
                     <div>
                         <select name="diffLevel" id="diffLevel">
+                            <option value=""></option>
                             <option value="1">Low Intensity</option>
                             <option value="2">Medium Intensity</option>
                             <option value="3">High Intensity</option>
@@ -67,9 +63,7 @@
 
                 </div>
             
-            </div>
 
-            <div class="container">
 
                 <div id="div_setDiet">
                 <h2 style="text-align: center"> Set your preferred diet type  </h2>
@@ -77,79 +71,111 @@
                     <div id="message2"></div>
                     <div>
                         <select name="dietType" id="dietType">
-                            <option value="1">Omniverous</option>
-                            <option value="2">Vegan</option>
-                            <option value="3">Vegetarian</option>
-                            <option value="4">Carnivore</option>
-                            <option value="5">Paleo</option>
-                            <option value="6">Pescatarian</option>
+                            <option value=""></option>
+                            <option value="Omniverous">Omniverous</option>
+                            <option value="Vegan">Vegan</option>
+                            <option value="Vegetarian">Vegetarian</option>
+                            <option value="Carnivore">Carnivore</option>
+                            <option value="Paleo">Paleo</option>
+                            <option value="Pescatarian">Pescatarian</option>
                         </select>
                     </div>
+                </div>
 
+                <div>
+                    <input type="button" value="Submit" name="but_submit" id="but_submit" />
                 </div>
             
             </div>
-
             <br>
         <!-- Database Login Check Script -->
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/x64-core.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/sha3.min.js"></script>
-   
-        <script type="text/javascript"> 
-            $(document).ready(function(){
-   			$("#but_submit").click(function(){
-   			    
-   			});
-		});			
-        </script> 
-        <!-- Database Login Check Script End -->
 
         <!-- Database Login Check Script -->
         <script type="text/javascript"> 
             $(document).ready(function(){
    			$("#but_submit").click(function(){
-                var username = $("#uname").val().trim();
-				var password = $("#txt_renewpwd").val().trim();
-				   
+                var username ='<?php echo $session_value;?>';
+				var password = $("#txt_oldpassword").val().trim();
+
+                var msg = "";
+                
+                if (username != "" && password != ""){
 				var ciphertext = CryptoJS.SHA3(password, { outputLength: 224 });
 
-   			    if( username != "" && (ciphertext.toString()) != "" ){
    			        $.ajax({
    			            url:'../php/checkUser.php',
    			            type:'post',
    			            data:{username:username,password:(ciphertext.toString())},
    			            success:function(response){
-   			                var msg = "";
    			                if(response == 1){
                     		}else{
-                        	msg = "Invalid username and password!";
+                        	    msg = "Please resubmit";
                     		}
+                            $("#message").html(msg);
+   			            }
+   			        });
+                }
+
+				var password = $("#txt_newpwd").val().trim();
+                var passCheck = $("#txt_renewpwd").val().trim();
+				   
+                if( username != "" && password != "" && passCheck != ""){
+				    var ciphertext = CryptoJS.SHA3(password, { outputLength: 224 });
+                    var ciphertextCheck = CryptoJS.SHA3(passCheck, { outputLength: 224 });
+
+   			        if( (ciphertext.toString()) != "" && (ciphertext.toString() == ciphertextCheck.toString())){
+   			            $.ajax({
+   			                url:'../php/changePwd.php',
+   			                type:'post',
+   			                data:{username:username,password:(ciphertext.toString())},
+   			                success:function(response){
+   			                    if(response == 1){
+                                    msg = "Password changed successfully!";
+                                } else if (response == 0) {
+                            	    msg = "Invalid password1!";
+                        		}
+                                $("#message").html(msg);
+   			                }
+   			            });
+   			        }
+                }
+                
+                var difficulty = $("#diffLevel").val().trim();
+
+                if( username != "" && difficulty != ""){
+   			        $.ajax({
+   			            url:'../php/changeDif.php',
+   			            type:'post',
+		                data:{username:username,difficulty:difficulty},
+      		            success:function(response){
+   		                if(response == 1){
+                            msg = "Difficulty changed successfully!";
+                        } else if (response == 0) {
+                    	    msg = "Invalid difficulty!";
+                		}
+                            $("#message1").html(msg);
    			            }
    			        });
    			    }
 
-				var password = $("#txt_newpwd").val().trim();
-                var passCheck = $("#txt_pwdre").val().trim();
-				   
-				var ciphertext = CryptoJS.SHA3(password, { outputLength: 224 });
-                var ciphertextCheck = CryptoJS.SHA3(passCheck, { outputLength: 224 });
+                var dietType = $("#dietType").val().trim();
 
-   			    if( username != "" && (ciphertext.toString()) != "" && (ciphertext.toString() == ciphertextCheck.toString())){
+                if( username != "" && dietType != ""){
    			        $.ajax({
-   			            url:'../php/addUser.php',
+   			            url:'../php/changeDif.php',
    			            type:'post',
-   			            data:{username:username,password:(ciphertext.toString())},
-   			            success:function(response){
-   			                var msg = "Password changed successfully!";
-   			                if(response == 1){
-                       			window.location.assign("../php/UserPortal.php");
-                    		}else if (response == 2) {
-                            } else {
-                        	    msg = "Invalid password!";
-                    		}
-                    		$("#message").html(msg);
+		                data:{username:username,dietType:dietType},
+      		            success:function(response){
+   		                if(response == 1){
+                            msg = "Diet type changed successfully!";
+                        } else if (response == 0) {
+                    	    msg = "Invalid diet Type!";
+                		}
+                            $("#message2").html(msg);
    			            }
    			        });
    			    }
@@ -159,5 +185,7 @@
         <!-- Database Login Check Script End -->
 
         </div>
+
+        <?php include ('../html/Header.html'); ?>
     </body>
 </html>

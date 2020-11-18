@@ -72,14 +72,14 @@ header .navigation li a
     
 }
 header .navigation li input
- 
+ {
   background-color: black;
   border: none;
   font-size: 20px;
 }
 header .navigation li a:hover
 {
-    color: #o3a9f4;
+    color: #03a9f4;
 }
 
 .content
