@@ -28,66 +28,46 @@
 
         <div class="container">
 
-            <div class = "settings-heading">
-                <h1 style="text-align: center"> Change Your User Settings  </h1>
+            <h1 style="text-align: center"> Change Your User Settings  </h1>
+
+            <h2> Change Your Password  </h2>
+            <div id="message"></div>
+            <div class = "displayBoxes">
+                <input type="password" class="textbox" id="txt_oldpassword" name="txt_oldpassword" placeholder="Old Password" />
+                <br><br>
+                <input type="password" class="textbox" id="txt_newpwd" name="txt_newpwd" placeholder="New Password"/>
+                <br><br>
+                <input type="password" class="textbox" id="txt_renewpwd" name="txt_renewpwd" placeholder="Re-Type New Password"/>
             </div>
 
-                <div id="div_signup">
-                <h2 style="text-align: center"> Change Your Password  </h2>
-                    <div id="message"></div>
-                    <div>
-                        <input type="password" class="textbox" id="txt_oldpassword" name="txt_oldpassword" placeholder="Old Password" />
-                    </div>
-                    <div>
-                        <input type="password" class="textbox" id="txt_newpwd" name="txt_newpwd" placeholder="New Password"/>
-                    </div>
-                    <div>
-                        <input type="password" class="textbox" id="txt_renewpwd" name="txt_renewpwd" placeholder="Re-Type New Password"/>
-                    </div>
-                </div>
-            
+            <h2> Set your preferred exercise difficulty level  </h2>
+            <div id="message1"></div>
 
+            <select name="diffLevel" id="diffLevel">
+                <option value=""></option>
+                <option value="1">Low Intensity</option>
+                <option value="2">Medium Intensity</option>
+                <option value="3">High Intensity</option>
+            </select>
 
-                <div id="div_setDiff">
-                <h2 style="text-align: center"> Set your preferred exercise difficulty level  </h2>
+            <h2> Set your preferred diet type  </h2>
+            <div id="message2"></div>
+            <select name="dietType" id="dietType">
+                <option value=""></option>
+                <option value="Omniverous">Omniverous</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Carnivore">Carnivore</option>
+                <option value="Paleo">Paleo</option>
+                <option value="Pescatarian">Pescatarian</option>
+            </select>
 
-                    <div id="message1"></div>
-                    <div>
-                        <select name="diffLevel" id="diffLevel">
-                            <option value=""></option>
-                            <option value="1">Low Intensity</option>
-                            <option value="2">Medium Intensity</option>
-                            <option value="3">High Intensity</option>
-                        </select>
-                    </div>
-
-                </div>
-            
-
-
-                <div id="div_setDiet">
-                <h2 style="text-align: center"> Set your preferred diet type  </h2>
-
-                    <div id="message2"></div>
-                    <div>
-                        <select name="dietType" id="dietType">
-                            <option value=""></option>
-                            <option value="Omniverous">Omniverous</option>
-                            <option value="Vegan">Vegan</option>
-                            <option value="Vegetarian">Vegetarian</option>
-                            <option value="Carnivore">Carnivore</option>
-                            <option value="Paleo">Paleo</option>
-                            <option value="Pescatarian">Pescatarian</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div>
-                    <input type="button" value="Submit" name="but_submit" id="but_submit" />
-                </div>
-            
+            <h2></h2>
+            <div class = "displayBoxes">
+                <input type="button" value="Submit" name="but_submit" id="but_submit" />
             </div>
-            <br>
+        </div>
+        <br>
         <!-- Database Login Check Script -->
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
@@ -186,6 +166,6 @@
 
         </div>
 
-        <?php include ('../html/Header.html'); ?>
+        <?php include ('../html/Footer.html'); ?>
     </body>
 </html>
