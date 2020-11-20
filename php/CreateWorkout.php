@@ -13,7 +13,7 @@
 		<!-- Header Begin -->
 		<center>
             <?php include ('../html/Header.html'); ?>
-            <form method = "post" action="./getWorkout.php">
+            <form method = "post" action="./GetWorkout.php">
                 <fieldset>
                     Intensity: 
                     <input  type="radio" 
