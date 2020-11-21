@@ -66,9 +66,12 @@ header .navigation li input {
   font-size: 20px;
   margin-right: 10px;
 }
-header .navigation li a:hover
-{
-    color: #o3a9f4;
+header .navigation li a:hover {
+    color: o3a9f4;
+}
+
+header .headerLogo {
+    padding-left: 24px;
 }
 
 footer 
@@ -83,4 +86,4 @@ footer
     padding-bottom: 10px;
 	bottom:0;
 	width:100%;
-}	
+}
