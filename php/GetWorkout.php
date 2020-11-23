@@ -56,13 +56,12 @@ array_push($my_array, $result);
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/Contact.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <style>
-            
-        </style>
+        <link rel="stylesheet" href="../css/GetWorkout.css">
+        <link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
+        <?php include ('../html/Header.html'); ?>
         <?php   
                 
                 /* for ($x = 0; $x < sizeof($equipment) + 1; $x++)
@@ -126,7 +125,6 @@ array_push($my_array, $result);
                             if($y == $my_workout_numbers[$i])
                             {
                                 $is_in_array = True;
-                                
                             }
                         }
                         $row = mysqli_fetch_assoc($my_array[$x]);
@@ -172,7 +170,13 @@ array_push($my_array, $result);
                     {
                         $x = 10;
                     }
-                }?>
+                }
+        ?>
 
+        <div class = "displayBlock">
+            This is where you want to put your text to be displayed mate
+        </div>
+
+        <?php include ('../html/Footer.html'); ?>
     </body>
 </html>

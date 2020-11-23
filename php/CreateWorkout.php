@@ -1,6 +1,7 @@
 <?php
 	include "./config.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="">
 	<head>
@@ -10,6 +11,7 @@
 		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
+
 		<!-- Header Begin -->
 		<center>
             <?php include ('../html/Header.html'); ?>
@@ -112,4 +114,3 @@
 
         <?php include ('../html/Footer.html'); ?>
     </body>
-</html>
