@@ -4,14 +4,7 @@
 	// Check user login or not
 	if(!isset($_SESSION['uname'])){
 		header('Location: ../php/Login.php');
-	}
-
-	// logout
-	if(isset($_POST['but_logout'])){
-		session_destroy();
-		header('Location: ../html/Home.html');
-    }
-    
+	}    
     $session_value=(isset($_SESSION['uname']))?$_SESSION['uname']:'';
 ?>
 
@@ -24,7 +17,12 @@
 		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-		<?php include ('../html/Header.html'); ?>
+        <?php 
+        if(!isset($_SESSION['uname'])){
+            include ('../html/Header.html');
+        } else {
+            include ('../html/HeaderLoggedIn.html');
+        } ?>
 
         <div class="container">
 
