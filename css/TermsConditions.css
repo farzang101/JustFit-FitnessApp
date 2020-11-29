@@ -1,0 +1,18 @@
+
+html{
+  font-family: 'Montserrat', sens-self;
+}
+
+body {
+	font-size: 16px;
+}
+
+.Term{
+	margin-left: 20%;
+    margin-right: 20%;
+}
+
+.column2 h3{
+    color:blue;
+    text-align: center;
+}

@@ -1,0 +1,89 @@
+body {
+   min-height: 400px;
+   margin-bottom: 100px;
+   clear: both;
+}
+
+header 
+{
+	font-size: 18px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo
+{
+    padding-left: 40px;
+    position: relative;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+header .navigation
+{
+    position: relative;
+    display: flex;
+    padding-right: 20px;
+}
+header .navigation li
+{
+    list-style: none;
+}
+header .navigation li a
+{
+    padding-right: 12px;
+    padding-left: 12px;
+    border-right: 8px solid black;
+    font-size: 1.2em;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .navigation nl a
+{
+    padding-left: 12px;
+    font-size: 1.2em;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .navigation li input {
+  background-color: black;
+  border: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+header .navigation li a:hover {
+    color: o3a9f4;
+}
+
+header .headerLogo {
+    padding-left: 24px;
+}
+
+footer 
+{
+    flex-shrink: 0;
+	font-size: 18px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    clear: both;
+    position:fixed;
+	color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	bottom:0;
+	width:100%;
+}
