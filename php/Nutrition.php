@@ -27,8 +27,7 @@
             include ('../html/Header.html');
         } else {
             include ('../html/HeaderLoggedIn.html');
-        } ?>
-       
+        } ?>       
           <!--------------------First--------------------------------->
         <button onclick="myFunction()"> Smoothie</button> 
         <div id="myDIV"> 
