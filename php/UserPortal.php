@@ -22,7 +22,12 @@
 		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-		<?php include ('../html/Header.html'); ?>
+        <?php 
+        if(!isset($_SESSION['uname'])){
+            include ('../html/Header.html');
+        } else {
+            include ('../html/HeaderLoggedIn.html');
+        } ?>
         
     	<div class = "portal-heading">
         	<h1 style="text-align: center"> YOUR PORTAL   </h1>

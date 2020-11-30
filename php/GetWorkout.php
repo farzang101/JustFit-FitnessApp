@@ -1,5 +1,16 @@
-<?php 
-include "config.php";
+<?php
+	include "../php/config.php";
+
+	// Check user login or not
+	if(!isset($_SESSION['uname'])){
+		header('Location: ../php/Login.php');
+	}
+
+	// logout
+	if(isset($_POST['but_logout'])){
+		session_destroy();
+		header('Location: ../html/Home.html');
+    }
 /* ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); */
@@ -53,15 +64,19 @@ array_push($my_array, $result);
 
 <!DOCTYPE html>
 <html lang="">
-	<head>
+<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="../css/GetWorkout.css">
-        <link rel="stylesheet" href="../css/HeaderFooter.css">
+		<link rel="stylesheet" href="../css/GetWorkout.css">
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-        <?php include ('../html/Header.html'); ?>
+        <?php 
+        if(!isset($_SESSION['uname'])){
+            include ('../html/Header.html');
+        } else {
+            include ('../html/HeaderLoggedIn.html');
+        } ?>
         <?php   
                 
                 /* for ($x = 0; $x < sizeof($equipment) + 1; $x++)

@@ -1,3 +1,18 @@
+<?php
+	include "../php/config.php";
+
+	// Check user login or not
+	if(!isset($_SESSION['uname'])){
+		header('Location: ../php/Login.php');
+	}
+
+	// logout
+	if(isset($_POST['but_logout'])){
+		session_destroy();
+		header('Location: ../html/Home.html');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="">
 	<head>
@@ -7,7 +22,12 @@
 		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-		<?php include ('../html/Header.html'); ?>
+        <?php 
+        if(!isset($_SESSION['uname'])){
+            include ('../html/Header.html');
+        } else {
+            include ('../html/HeaderLoggedIn.html');
+        } ?>
 		<center>
 			<div class="placeTextureBurn">
 				<br>

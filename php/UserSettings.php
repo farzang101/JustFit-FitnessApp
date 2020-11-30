@@ -4,70 +4,88 @@
 	// Check user login or not
 	if(!isset($_SESSION['uname'])){
 		header('Location: ../php/Login.php');
-	}
-
-	// logout
-	if(isset($_POST['but_logout'])){
-		session_destroy();
-		header('Location: ../html/Home.html');
-    }
-    
+	}    
     $session_value=(isset($_SESSION['uname']))?$_SESSION['uname']:'';
 ?>
 
 <!DOCTYPE html >
 <html>
-<head>
+  <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../css/UserSettings.css">
 		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-		<?php include ('../html/Header.html'); ?>
+        <?php 
+        if(!isset($_SESSION['uname'])){
+            include ('../html/Header.html');
+        } else {
+            include ('../html/HeaderLoggedIn.html');
+        } ?>
 
         <div class="container">
 
-            <h1 style="text-align: center"> Change Your User Settings  </h1>
-
-            <h2> Change Your Password  </h2>
-            <div id="message"></div>
-            <div class = "displayBoxes">
-                <input type="password" class="textbox" id="txt_oldpassword" name="txt_oldpassword" placeholder="Old Password" />
-                <br><br>
-                <input type="password" class="textbox" id="txt_newpwd" name="txt_newpwd" placeholder="New Password"/>
-                <br><br>
-                <input type="password" class="textbox" id="txt_renewpwd" name="txt_renewpwd" placeholder="Re-Type New Password"/>
+            <div class = "settings-heading">
+                <h1 style="text-align: center"> Change Your User Settings  </h1>
             </div>
 
-            <h2> Set your preferred exercise difficulty level  </h2>
-            <div id="message1"></div>
+                <div id="div_signup">
+                <h2 style="text-align: center"> Change Your Password  </h2>
+                    <div id="message"></div>
+                    <div>
+                        <input type="password" class="textbox" id="txt_oldpassword" name="txt_oldpassword" placeholder="Old Password" />
+                    </div>
+                    <div>
+                        <input type="password" class="textbox" id="txt_newpwd" name="txt_newpwd" placeholder="New Password"/>
+                    </div>
+                    <div>
+                        <input type="password" class="textbox" id="txt_renewpwd" name="txt_renewpwd" placeholder="Re-Type New Password"/>
+                    </div>
+                </div>
+            
 
-            <select name="diffLevel" id="diffLevel">
-                <option value=""></option>
-                <option value="1">Low Intensity</option>
-                <option value="2">Medium Intensity</option>
-                <option value="3">High Intensity</option>
-            </select>
 
-            <h2> Set your preferred diet type  </h2>
-            <div id="message2"></div>
-            <select name="dietType" id="dietType">
-                <option value=""></option>
-                <option value="Omniverous">Omniverous</option>
-                <option value="Vegan">Vegan</option>
-                <option value="Vegetarian">Vegetarian</option>
-                <option value="Carnivore">Carnivore</option>
-                <option value="Paleo">Paleo</option>
-                <option value="Pescatarian">Pescatarian</option>
-            </select>
+                <div id="div_setDiff">
+                <h2 style="text-align: center"> Set your preferred exercise difficulty level  </h2>
 
-            <h2></h2>
-            <div class = "displayBoxes">
-                <input type="button" value="Submit" name="but_submit" id="but_submit" />
+                    <div id="message1"></div>
+                    <div>
+                        <select name="diffLevel" id="diffLevel">
+                            <option value=""></option>
+                            <option value="1">Low Intensity</option>
+                            <option value="2">Medium Intensity</option>
+                            <option value="3">High Intensity</option>
+                        </select>
+                    </div>
+
+                </div>
+            
+
+
+                <div id="div_setDiet">
+                <h2 style="text-align: center"> Set your preferred diet type  </h2>
+
+                    <div id="message2"></div>
+                    <div>
+                        <select name="dietType" id="dietType">
+                            <option value=""></option>
+                            <option value="Omniverous">Omniverous</option>
+                            <option value="Vegan">Vegan</option>
+                            <option value="Vegetarian">Vegetarian</option>
+                            <option value="Carnivore">Carnivore</option>
+                            <option value="Paleo">Paleo</option>
+                            <option value="Pescatarian">Pescatarian</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="button" value="Submit" name="but_submit" id="but_submit" />
+                </div>
+            
             </div>
-        </div>
-        <br>
+            <br>
         <!-- Database Login Check Script -->
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
@@ -165,7 +183,6 @@
         <!-- Database Login Check Script End -->
 
         </div>
-
         <?php include ('../html/Footer.html'); ?>
     </body>
 </html>
