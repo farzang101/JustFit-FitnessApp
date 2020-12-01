@@ -1,3 +1,7 @@
+<?php
+	include "../php/config.php";
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -7,74 +11,31 @@
     <meta name="viewport" content="width=device-width"> 
     <title> Fitness Gods | Landing page </title>
     <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/HeaderFooter.css">
+
 </head>
-
-<body>
-            <?php include ('../html/Header.html'); ?>
-
-    <section>
-        <header>
-            <container> 
-                <a href="../php/Home.php" class = "logo">Just Fit</a>
-            </container>
-            
-        <div class="navbar">
-            
-                <u1 class = "navigation">
-                    <li><a href="../php/Home.php">Home</a></li>
-                    <li><a href="../php/About.php">About</a></li>
-                    <li><a href="../php/Contact.php">Contact</a></li> 
-                    <li><a href="../php/Login.php">Login</a></li>
-                    <li><a href="../php/UserPortal.php">User Portal</a></li>
-                    <li><input type="text" name="search" placeholder="Search..."></li>
-                </u1>
-                
-            </div>
-        </header>
+		
+	<body>
+        <?php 
+        if(!isset($_SESSION['uname'])){
+            include ('../html/Header.html');
+        } else {
+            include ('../html/HeaderLoggedIn.html');
+        } ?>
         
         
-        <div class="content">
-            <div class="contentBx">
-                <h2> Tough Times
-                 
-                    Stronger Minds</h2>
-                <br>
-                <br>
-                <br>
-                <a href="../php/SignUp.php">Get Started</a>
-                </div> 
-            </div> 
-        <br>
         
-    
-    </section>
-    
-<br><br><br><br><br><br>
-    
-    <div class="container">
-
-    <div class="card1"> 
-            <a href="../php/Nutrition.php">Nutrition</a>
-            <p>View Your Nutritional Content</p> 
-        </div>
-        <br>
-        
-    <div class="card2">
-        <a href="../php/Workouts.php">
-            Workouts</a>
-            <p>Browse and edit your saved workouts</p> 
-        </div>
-        <br>
-
-     <div class="card3">
-         <a href= ..php/UserPortal.php>User Portal  </a>
-            <p>View Your Favorite Fitness Plans </p> 
-        </div>
-        
-</div> 
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">It Never Gets Easier. You Just Get Stronger</h1>
+                <p>We are JustFit. Working out from home has never been so easy</p>
+                <a href="../html/SignUp.html">Get Started</a>
+       </div>
+    </div>
+       
     <?php include ('../html/Footer.html'); ?>
+        
+        
     
-</body>
-
-
+    </body>
 </html>
