@@ -29,7 +29,7 @@
         <div class="hero-text">
             <h1 style="font-size:50px">It Never Gets Easier. You Just Get Stronger</h1>
                 <p>We are JustFit. Working out from home has never been so easy</p>
-                <a href="../html/SignUp.html">Get Started</a>
+                <a href="../php/SignUp.php">Get Started</a>
        </div>
     </div>
        
