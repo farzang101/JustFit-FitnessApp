@@ -29,36 +29,29 @@
             include ('../html/HeaderLoggedIn.html');
         } ?>
         
-    	<div class = "portal-heading">
-        	<h1 style="text-align: center"> YOUR PORTAL   </h1>
+<div>
+        <h1>User Dashboard</h1>
+    </div>
+
+    
+    <div class="cards">
         
+        <div class="card">
+            <h2><a href="../php/FavoriteExercises.php">Favorite Workouts</a></h2>
+            
         </div>
         
+        <div class="card">
+            <h2><a href="../php/GetWorkout.php">Create Workout</a></h2>
+        </div>
         
-    	<div class="card1">
-  			<div class="container">
-    			<span><h2>Nutrition</h2></span> 
-    			<p>View Your Nutritional Content</p> 
-  			</div>
-		</div>
-        
-		<div class="card2">
-  			<div class="container">
-    			<span><h2>Workouts</h2></span> 
-    			<p>Browse and edit your saved workouts</p> 
-  			</div>
-		</div>
-        
-		<div class="card3">
-  			<div class="container">
-    			<span><h2>Fitness Plans</h2></span> 
-    			<p>View Your Favorite Fitness Plans </p> 
-  			</div>
-		</div>
-        
-        
-
-    </body>
-
-
+        <div class="card">
+            <h2><a href="../php/UserSettings.php">Account Settings</a></h2>
+        </div>
+  
+    </div>
+    
+   
+</body>
+    
 </html>
