@@ -77,13 +77,11 @@ array_push($my_array, $result);
         } else {
             include ('../html/HeaderLoggedIn.html');
         } ?>
-        <?php   
-                
-                /* for ($x = 0; $x < sizeof($equipment) + 1; $x++)
-                {
-                    rand(0, $total_workouts);
-                } */
+        
 
+        <div class = "displayBlock">
+            <?php   
+                $send_array = array();
                 $total_workouts = $time / 5;
                 for ($x = 0; $x < sizeof($equipment) + 1; $x++)
                 {
@@ -123,14 +121,7 @@ array_push($my_array, $result);
                             array_push($my_workout_numbers, $curr_rand_val);
                         }
                     }
-                    // echo " -------------------total Workouts";
-                    // echo $total_workouts;
-                    // echo "my_workout_numbers";
-                    // print_r($my_workout_numbers);
-                    // echo "rand number workout";
-                    // echo $rand_number_workout;
-                    // echo "equipment";
-                    // echo $x;
+
                     for($y = 0; $y < mysqli_num_rows($my_array[$x]); $y++)
                     {
                         
@@ -140,6 +131,7 @@ array_push($my_array, $result);
                             if($y == $my_workout_numbers[$i])
                             {
                                 $is_in_array = True;
+                                
                             }
                         }
                         $row = mysqli_fetch_assoc($my_array[$x]);
@@ -149,7 +141,7 @@ array_push($my_array, $result);
                             echo $row["Name"];
                             echo "<br>";
                             echo "<br>";
-                            
+                            array_push($send_array, $row["ID"]);
                             echo "Description: ";
                             echo $row["Description"];
                             echo "<br>";
@@ -185,11 +177,14 @@ array_push($my_array, $result);
                     {
                         $x = 10;
                     }
-                }
+                }  
         ?>
 
-        <div class = "displayBlock">
-            This is where you want to put your text to be displayed mate
+        <form method = "post" action="./addFavorites.php">
+                <input type="hidden" name="Workouts" value="<?php echo htmlentities(serialize($send_array)); ?>">  
+                <input type="submit" value="Save Workout to Favorites">
+        </form>
+            <br><br><br><br> 
         </div>
 
         <?php include ('../html/Footer.html'); ?>
