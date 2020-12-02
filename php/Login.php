@@ -9,33 +9,44 @@
 
 <!DOCTYPE html>
 <html lang="">
-			<head>
+<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../css/Login.css"> 
+		<link rel="stylesheet" href="../css/Login.css">
 		<link rel="stylesheet" href="../css/HeaderFooter.css">
 	</head>
 	<body>
-		<?php include ('../html/Header.html'); ?>	
+        <?php 
+        if(!isset($_SESSION['uname'])){
+            include ('../html/Header.html');
+        } else {
+            include ('../html/HeaderLoggedIn.html');
+        } ?>
         <!-- Login Form Begin -->
-        <div class="container">
-            <h1>Login</h1>
-			<div id="div_login">
-				<div id="message"></div>
-				<div class="uname">
-					<input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
-				</div>
-				<div class="pass">
-					<input type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
-				</div>
-				<div class="sub">
-					<input type="button" value="Submit" name="but_submit" id="but_submit" />
-				</div>
-				<a href=" ../php/SignUp.php">Don't have an account?</a>
-			</div>
-		<br>
-		</div>
-		<br>
+        <center>
+            <div class="container">
+                <h1>Login</h1>
+                <div id="div_login">
+                    <div id="message"></div>
+                    <div class="uname">
+                        <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
+                    </div>
+                    <br>
+                    <div class="pass">
+                        <input type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
+                    </div>
+                    <br>
+                    <div class="sub">
+                        <input type="button" value="Submit" name="but_submit" id="but_submit" />
+                    </div>
+                    <br>
+                    <div class="hyper">
+                        <a href=" ../php/SignUp.php">Don't have an account?</a>
+                    </div>
+                </div>
+            </div>
+        </center>
+
         <!-- Login Form End -->
 
         <!-- Database Login Check Script -->
@@ -74,6 +85,6 @@
         <!-- Database Login Check Script End -->
 
 
-		<?php include ('../html/Footer.html'); ?>
+        <?php include ('../html/Footer.html'); ?>
 	</body>
 </html>

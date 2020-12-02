@@ -1,0 +1,61 @@
+html{
+    background-image: url(../image/BlueTexture.png);
+}
+.body{
+}
+.style1 a {
+  float: right;
+  color: white;
+  padding: 14px 13px;
+  text-decoration: none;
+  font-size: 17px;
+  font-style: bold;
+}
+.style {
+  float: right;
+  margin: 0;
+}
+
+input[type=password]{
+    width: 200px;
+    font-size: 18px;
+    align-content: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.displayBoxes input[type=button]{
+    width: 200px;
+    font-size: 18px;
+    align-content: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+select{
+    width: 200px;
+    font-size: 18px;
+    align-content: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container {
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    width: 100%;
+    align-content: center;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+a:link {
+  color: white;
+  font-size: 18px;
+  background-color: transparent;
+  text-decoration: none;
+}
