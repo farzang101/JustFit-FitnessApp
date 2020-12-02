@@ -35,14 +35,7 @@ html{
     margin-left: 10;
     font-size: 14px;
   }
-  .login a {
-    float: right;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 900;
-      color:aliceblue;
-      
-  }
+ 
   hr {
     width: 100%;
     height: 3px;
@@ -72,118 +65,90 @@ html{
       font-size: 12px;
       text-align: center;
   }
-  .Exercise9 {
-      color: antiquewhite;
+h5{
+    color: aqua;
+    text-align: center;
+    font-size: 16px; 
+    
+    
+}
+button {
+    background-color: #4CAF50; /* Green */
+    background-size: 14px;
+    border: none;
+    color: white;
+    padding: 25px 39px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
   }
-  .Exercise10 {
-      color: antiquewhite;
+.btn{
+    margin-left: 10%;
+    
+}
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5 {background-color: #555555; color: black;} /* Black */
+.button6 {background-color: #FAEBD7; color: black;} /* Black */
+.button7 {background-color: #5F9EA0;} /* Black */
+.button8 {background-color: #DEB887;} /* Black */
+.button9 {background-color: #D2691E;color: black;} /* Black */
+.button10 {background-color: #DC143C; color: black;
+} /* Black */
+.button11 {background-color: #FFF8DC; color: black;} /* Black */
+.button12 {background-color: #00008B;} /* Black */
+.button13 {background-color: #00BFFF;} /* Black */
+.button14 {background-color: #FFD700;} /* Black */
+.button15 {background-color: #F0FFF0; color: black;} /* Black */
+.button16 {background-color: #FFF0F5;color: black;}
+.button17 {background-color: #CD853F;color: black;}
+.button18 {background-color: #87CEFA;color: black;}
+.button19 {background-color: #ADD8E6;color: black;}
+.button20 {background-color: #FF69B4;color: black;}/* Black */
+
+  #Exercise9 {
+      color: #ff4000;
+  }
+  #Exercise10 {
+      color: blue;
   }
   
-  .Exercise11 {
+  #Exercise11 {
+      color: #00ff40;
+  }
+  #Exercise12 {
+      color: #00bfff;
+  }
+  #Exercise13 {
       color: antiquewhite;
   }
-  .Exercise12 {
+  #Exercise14 {
+      color: #0080ff;
+  }
+  #Exercise15 {
+      color: #0040ff;
+  }
+  #Exercise16 {
+      color: #8000ff;
+  }
+  #Exercise17 {
       color: antiquewhite;
   }
-  .Exercise13 {
+  #Exercise18 {
+      color: 	#ff00ff;
+  }
+  #Exercise19 {
+      color: #e60000;
+  }
+  #Exercise20 {
       color: antiquewhite;
   }
-  .Exercise14 {
-      color: antiquewhite;
-  }
-  .Exercise15 {
-      color: antiquewhite;
-  }
-  .Exercise16 {
-      color: antiquewhite;
-  }
-  .Exercise17 {
-      color: antiquewhite;
-  }
-  .Exercise18 {
-      color: antiquewhite;
-  }
-  .Exercise19 {
-      color: antiquewhite;
-  }
-  .Exercise20 {
-      color: antiquewhite;
-  }
-  .Exercise21 {
-      color: antiquewhite;
-  }
-  .Exercise22 {
-      color: antiquewhite;
-  }
-  .Exercise23 {
-      color: antiquewhite;
-  }
-  .Exercise24 {
-      color: antiquewhite;
-  }
-  .Exercise25 {
-      color: antiquewhite;
-  }
-  .Exercise26 {
-      color: antiquewhite;
-  }
-  .Exercise27 {
-      color: antiquewhite;
-  }
-  .Exercise28 {
-      color: antiquewhite;
-  }
-  .Exercise29 {
-      color: antiquewhite;
-  }
-  .Exercise30 {
-      color: antiquewhite;
-  }
-  .Exercise31 {
-      color: antiquewhite;
-  }
-  .Exercise32 {
-      color: antiquewhite;
-  }
-  .Exercise33 {
-      color: antiquewhite;
-  }
-  .Exercise34 {
-      color: antiquewhite;
-  }
-  .Exercise35 {
-      color: antiquewhite;
-  }
-  .Exercise36 {
-      color: antiquewhite;
-  }
-  .Exercise37 {
-      color: antiquewhite;
-  }
-  .Exercise38 {
-      color: antiquewhite;
-  }
-  .Exercise39 {
-      color: antiquewhite;
-  }
-  .Exercise40 {
-      color: antiquewhite;
-  }
-  .Exercise41 {
-      color: antiquewhite;
-  }
-  .Exercise42 {
-      color: antiquewhite;
-  }
-  .Exercise43 {
-      color: antiquewhite;
-  }
-  .Exercise44 {
-      color: antiquewhite;
-  }
-  .Exercise45 {
-      color: antiquewhite;
-  }
-  .Exercise46 {
-      color: antiquewhite;
-  }
+ 
+ 
+ 
