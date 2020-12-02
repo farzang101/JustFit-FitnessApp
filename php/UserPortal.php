@@ -48,9 +48,14 @@
         <div class="card">
             <h2><a href="../php/UserSettings.php">Account Settings</a></h2>
         </div>
+         <div class="card">
+            <h2><a href="../php/Nutrition.php">Nutrition</a></h2>
+        </div>
+  
   
     </div>
-    
+        <?php include ('../html/Footer.html'); ?>
+
    
 </body>
     
