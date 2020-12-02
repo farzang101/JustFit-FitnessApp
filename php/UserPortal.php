@@ -37,12 +37,12 @@
     <div class="cards">
         
         <div class="card">
-            <h2><a href="../php/FavoriteExercises.php">Favorite Workouts</a></h2>
+            <h2><a href="../php/ShowFavorite.php">Favorite Workouts</a></h2>
             
         </div>
         
         <div class="card">
-            <h2><a href="../php/GetWorkout.php">Create Workout</a></h2>
+            <h2><a href="../php/CreateWorkout.php">Create Workout</a></h2>
         </div>
         
         <div class="card">
