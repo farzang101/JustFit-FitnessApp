@@ -1,9 +1,9 @@
 body {
     background-image: url(../image/GreenTexture.png);
+    background-color: rgba(255, 255, 255, 0.55);
 }
 
 .displayBlock {
-    background-color: rgba(255, 255, 255, 0.55);
     color: black;
     position: absolute;
     height: 60%;
