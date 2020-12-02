@@ -1,16 +1,37 @@
+<?php
+	include "../php/config.php";
+
+	// Check user login or not
+	if(!isset($_SESSION['uname'])){
+		header('Location: ../php/Login.php');
+	}
+
+	// logout
+	if(isset($_POST['but_logout'])){
+		session_destroy();
+		header('Location: ../html/Home.html');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="">
-	<head>
+<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src=p5.js></script>
 		<link rel="stylesheet" href="../css/Exercise.css">
-         <link rel="stylesheet" href="../css/HeaderFooter.css">
+		<link rel="stylesheet" href="../css/HeaderFooter.css">
+	</head>
+	<body>
+        <?php 
+        if(!isset($_SESSION['uname'])){
+            include ('../html/Header.html');
+        } else {
+            include ('../html/HeaderLoggedIn.html');
+        } ?>
         
 
         <!-------------------------------------------------->
-	</head>
-	<body>
+	
 		<br>
         <h5 > Please Click on Each Exerises if you Wish to Hide</h5>
         <div class="btn">
