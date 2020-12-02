@@ -10,7 +10,7 @@
 
 <!DOCTYPE html >
 <html>
-    <head>
+  <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../css/UserSettings.css">
@@ -183,7 +183,6 @@
         <!-- Database Login Check Script End -->
 
         </div>
-
-        <?php include ('../html/Header.html'); ?>
+        <?php include ('../html/Footer.html'); ?>
     </body>
 </html>
