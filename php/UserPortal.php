@@ -14,7 +14,7 @@
 ?>
 
 <!DOCTYPE html >
-<html>
+<html lang="en">
 <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,10 +49,19 @@
             <h2><a href="../php/UserSettings.php">Account Settings</a></h2>
         </div>
          <div class="card">
-            <h2><a href="../php/Nutrition.php">Nutrition</a></h2>
+            <h2><a href="../php/Nutrition.php">Nutrition Content</a></h2>
         </div>
   
   
+    </div>
+    <br><br>    <br><br>
+
+    
+    <div class="workouts">
+        <div class="workout-card">
+            <h2><a href="../php/Exercise.php">Browse all Workouts</a></h2>
+        </div>
+    
     </div>
         <?php include ('../html/Footer.html'); ?>
 
